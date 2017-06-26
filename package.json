@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "next": "^2.4.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.0",
+    "typography": "^0.15.10",
+    "typography-theme-wordpress-2014": "^0.15.10"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
