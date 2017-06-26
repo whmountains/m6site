@@ -11,5 +11,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
-  }
+  },
+  "version": "1.0.0"
 }
