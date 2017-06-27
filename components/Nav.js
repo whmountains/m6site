@@ -7,7 +7,6 @@ const BACKGROUND = `#2C5E86`
 const ACCENT = `rgba(25,118,210,1)`
 
 const Container = styled.div`
-  height: 60px;
   background: ${BACKGROUND};
   border-bottom: 5px solid ${ACCENT};
   box-sizing: border-box;
