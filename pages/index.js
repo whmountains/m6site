@@ -4,33 +4,16 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Footer from '../components/footer'
+import Buttons from '../components/Buttons'
 // import { config } from 'config'
 import '../css/MasterStyles.css'
 
-const Buttons = styled.div `
+const ButtonsWrapper = styled.div `
   display: flex;
   justify-content: space-around;
   align-content: center;
   width: 75%;
   max-width: 550px;
-`
-const RedButton = styled.a `
-    display: block;
-    padding: 20px;
-    background: #D97455;
-    width: 200px;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-`
-const BlueButton = styled.a `
-    display: block;
-    padding: 20px;
-    background: #1976D2;
-    width: 200px;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
 `
 const PlaceTop = styled.div `
   display: flex;
@@ -140,15 +123,14 @@ export default class Index extends React.Component {
       <div id="main">
         <Helmet>
           <title>El Refugio | Home</title>
-          <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"></link>
         </Helmet>
         <Splash>
           <HomeTitle>For families, by a family.</HomeTitle>
           <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br/>Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
-          <Buttons>
-            <BlueButton href="#">Reserve a Room</BlueButton>
-            <RedButton href="#">More Info</RedButton>
-          </Buttons>
+          <ButtonsWrapper>
+            <Buttons color='blue'>Reserve a Room</Buttons>
+            <Buttons color='red'>More Info</Buttons>
+          </ButtonsWrapper>
         </Splash>
         <ThePlace>
           <PlaceTop>
@@ -178,7 +160,6 @@ export default class Index extends React.Component {
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
           </TeamInfo>
         </TheTeam>
-        <Footer></Footer>
       </div>
     )
   }
