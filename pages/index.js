@@ -5,8 +5,8 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Footer from '../components/footer'
 // import { config } from 'config'
-import Styles from '../css/MasterStyles.css'
-const footerHeight = '235px'
+import '../css/MasterStyles.css'
+
 const Buttons = styled.div `
   display: flex;
   justify-content: space-around;

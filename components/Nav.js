@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router'
+import { Link, IndexLink as RRIndexLink } from 'react-router'
 import { lighten } from 'polished'
 
 const BACKGROUND = `#2C5E86`
@@ -44,19 +44,20 @@ const NavLink = styled(Link)`
  text-decoration: none;
  cursor: pointer;
 
- ${'' /* by default the background shows on the active element */}
- background: ${p => p.selected && lighten(0.1, BACKGROUND)};
+ &.active {
+   background: ${lighten(0.1, BACKGROUND)};
+ }
 
- ${'' /* reset the background if any of the links are hovered */}
  *:hover > & {
    background: transparent;
 
- ${'' /* and move it under the new link */}
    &:hover {
      background: ${lighten(0.1, BACKGROUND)};
    }
  }
 `
+
+const IndexLink = NavLink.withComponent(RRIndexLink)
 
 export default ({activePath = '/'}) => {
   console.log(activePath)
@@ -66,11 +67,11 @@ export default ({activePath = '/'}) => {
       <Logo /> {/* TODO: fill in this image */}
       <Name>El Refugio</Name>
       <Links>
-        <NavLink selected={activePath === '/'} href='/'>Home</NavLink>
-        <NavLink selected={activePath === '/lodge'} href='/lodge'>Accomodations</NavLink>
-        <NavLink selected={activePath === '/lake'} href='/lake'>Activities</NavLink>
-        <NavLink selected={activePath === '/gallery'} href='/gallery'>Gallery</NavLink>
-        <NavLink selected={activePath === '/booking'} href='/booking/'>Book Now</NavLink>
+        <IndexLink activeClassName='active' to='/'>Home</IndexLink>
+        <NavLink activeClassName='active' to='/lodge/'>Accomodations</NavLink>
+        <NavLink activeClassName='active' to='/lake/'>Activities</NavLink>
+        <NavLink activeClassName='active' to='/gallery/'>Gallery</NavLink>
+        <NavLink activeClassName='active' to='/booking/'>Book Now</NavLink>
       </Links>
     </Container>
   )
