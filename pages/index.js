@@ -4,7 +4,8 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 // import { config } from 'config'
-import Font from './font.css'
+import './font.css'
+
 const footerHeight = '235px'
 const Buttons = styled.div `
   display: flex;
