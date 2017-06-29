@@ -70,7 +70,7 @@ export default ({activePath = '/'}) => {
         <NavLink selected={activePath === '/lodge'} href='/lodge'>Accomodations</NavLink>
         <NavLink selected={activePath === '/lake'} href='/lake'>Activities</NavLink>
         <NavLink selected={activePath === '/gallery'} href='/gallery'>Gallery</NavLink>
-        <NavLink selected={activePath === '/booking'} href='/booking'>Book Now</NavLink>
+        <NavLink selected={activePath === '/booking'} href='/booking/'>Book Now</NavLink>
       </Links>
     </Container>
   )

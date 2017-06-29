@@ -132,8 +132,8 @@ const TheTeam = styled.div `
   width: 100vw;
   height: 100vh;
   background: #2C5E86;
+  margin-bottom: 235px;
 `
-
 export default class Index extends React.Component {
   render () {
     return (
@@ -154,7 +154,7 @@ export default class Index extends React.Component {
           <PlaceTop>
             <LeftImage></LeftImage>
             <PlaceRight>
-              <h1>The Lodge</h1>
+              <h1>Stuff</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
           </PlaceRight>
           </PlaceTop>
