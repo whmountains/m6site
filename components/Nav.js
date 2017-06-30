@@ -45,14 +45,14 @@ const NavLink = styled(Link)`
  cursor: pointer;
 
  &.active {
-   background: ${lighten(0.1, BACKGROUND)};
+   background: #1976d2;
  }
 
  *:hover > & {
    background: transparent;
 
    &:hover {
-     background: ${lighten(0.1, BACKGROUND)};
+     background: #1976d2;
    }
  }
 `
