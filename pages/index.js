@@ -99,6 +99,7 @@ const ThePlace = styled.div `
   height: 120vh;
   background: #fff;
   padding: 20px 0;
+  overflow: hidden;
 `
 const Gallery = styled.div `
   display: flex;
