@@ -73,7 +73,7 @@ const TeamInfo = styled.div `
 `
 const Splash = styled.div `
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 57px);
   background-image: url("http://via.placeholder.com/1920x1080");
   background-size: cover;
   background-position: center;
