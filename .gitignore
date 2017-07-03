@@ -31,3 +31,6 @@ public/
 
 # we use Yarn, not NPM!!
 package-lock.json
+
+# Finder settings
+.DS_Store

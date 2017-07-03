@@ -1,12 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import pano from '../images/mtn-pano.jpg'
+
+export const HEIGHT = '400px'
+
 const Footer = styled.div `
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 235px;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7a/Tatra_Mountains_banner.jpg");
+  height: ${HEIGHT};
+  background-image: url(${pano});
   background-size: cover;
   z-index: -1;
   display: flex;

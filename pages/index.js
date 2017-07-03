@@ -9,6 +9,11 @@ import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 // import { config } from 'config'
 import '../css/MasterStyles.css'
 
+import splashImg from '../images/splash-full.jpg'
+import theLodge from '../images/the-lodge.jpg'
+import theLake from '../images/the-lake.jpg'
+import theTeam from '../images/team.jpg'
+
 const ButtonsWrapper = styled.div `
   display: flex;
   justify-content: space-around;
@@ -42,23 +47,23 @@ const LeftImage = styled.div `
   width: 50%;
   height: 400px;
   transform: rotate(-3deg);
-  background-image: url("http://via.placeholder.com/600x450");
+  background-image: url(${theLodge});
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 `
 const RightImage = styled.div `
   width: 50%;
   height: 400px;
   transform: rotate(3deg);
-  background-image: url("http://via.placeholder.com/600x450");
+  background-image: url(${theLake});
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   align-self: flex-end;
 `
 const TeamImage = styled.div `
   width: 50%;
   height: 100%;
-  background-image: url("http://via.placeholder.com/800x1080");
+  background-image: url(${theTeam});
   background-size: cover;
   background-position: center;
 `
@@ -75,7 +80,7 @@ const TeamInfo = styled.div `
 const Splash = styled.div `
   width: 100vw;
   height: calc(80vh - ${NAV_HEIGHT});
-  background-image: url("http://via.placeholder.com/1920x1080");
+  background-image: url(${splashImg});
   background-size: cover;
   background-position: center;
   display: flex;

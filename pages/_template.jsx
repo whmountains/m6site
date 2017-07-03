@@ -10,6 +10,8 @@ const Container = styled.div`
   margin-top: ${NAV_HEIGHT};
   margin-bottom: ${FOOT_HEIGHT};
   min-height: calc(100vh - 57px);
+
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.59);
 `
 
 export default class Template extends React.Component {

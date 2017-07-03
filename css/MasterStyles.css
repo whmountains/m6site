@@ -2,7 +2,5 @@ body {
   font-family: "Source sans pro";
 }
 #main {
-  margin-bottom: 235px;
-  min-height: calc(100vh - 57px);
   background: #fff;
 }
