@@ -8,6 +8,7 @@ const Red = styled.a `
     text-align: center;
     text-decoration: none;
     color: #FFFFFF;
+    border-radius: 3px;
     background: #D97455;
 `
 const Blue = Red.extend `
