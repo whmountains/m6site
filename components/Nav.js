@@ -7,9 +7,16 @@ const BACKGROUND = `#2C5E86`
 const ACCENT = `rgba(25,118,210,1)`
 
 const Container = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
   background: ${BACKGROUND};
   border-bottom: 5px solid ${ACCENT};
   box-sizing: border-box;
+  height: 60px;
 
   display: flex;
   padding: 0 15px;
@@ -40,7 +47,7 @@ const NavLink = styled(Link)`
  justify-content: center;
  padding: 0 15px;
  color: white;
- font-size: 20px;
+ font-size: 22px;
  text-decoration: none;
  cursor: pointer;
 

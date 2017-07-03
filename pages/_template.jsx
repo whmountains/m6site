@@ -1,14 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { config } from 'config'
-import Footer from '../components/footer'
+import styled from 'styled-components'
 
+import Footer from '../components/footer'
 import Nav from '../components/Nav'
+
+const Container = styled.div`
+  margin-top: 60px;
+`
 
 export default class Template extends React.Component {
   render () {
     return (
-      <div>
+      <Container>
         <Nav />
         <Helmet title={config.siteTitle}>
           <link href="https://fonts.googleapis.com/css?family=Arvo|Caveat+Brush|Source+Sans+Pro" rel="stylesheet" />
@@ -16,7 +21,7 @@ export default class Template extends React.Component {
         </Helmet>
         {this.props.children}
         <Footer />
-      </div>
+      </Container>
     )
   }
 }
