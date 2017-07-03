@@ -99,9 +99,8 @@ const ThePlace = styled.div `
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 120vh;
   background: #fff;
-  padding: 20px 0;
+  padding: 40px 0;
   overflow: hidden;
 `
 const Gallery = styled.div `
