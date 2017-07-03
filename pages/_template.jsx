@@ -3,11 +3,13 @@ import Helmet from 'react-helmet'
 import { config } from 'config'
 import styled from 'styled-components'
 
-import Footer from '../components/footer'
+import Footer, { HEIGHT as FOOT_HEIGHT } from '../components/footer'
 import Nav, { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 
 const Container = styled.div`
   margin-top: ${NAV_HEIGHT};
+  margin-bottom: ${FOOT_HEIGHT};
+  min-height: calc(100vh - 57px);
 `
 
 export default class Template extends React.Component {
