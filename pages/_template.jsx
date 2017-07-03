@@ -4,10 +4,10 @@ import { config } from 'config'
 import styled from 'styled-components'
 
 import Footer from '../components/footer'
-import Nav from '../components/Nav'
+import Nav, { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 
 const Container = styled.div`
-  margin-top: 60px;
+  margin-top: ${NAV_HEIGHT};
 `
 
 export default class Template extends React.Component {

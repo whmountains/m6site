@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { Link, IndexLink as RRIndexLink } from 'react-router'
 import { lighten } from 'polished'
 
+export const HEIGHT = '60px'
+
 const BACKGROUND = `#2C5E86`
 const ACCENT = `rgba(25,118,210,1)`
 
@@ -16,7 +18,7 @@ const Container = styled.div`
   background: ${BACKGROUND};
   border-bottom: 5px solid ${ACCENT};
   box-sizing: border-box;
-  height: 60px;
+  height: ${HEIGHT};
 
   display: flex;
   padding: 0 15px;

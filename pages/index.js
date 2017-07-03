@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Footer from '../components/footer'
 import Buttons from '../components/Buttons'
+import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 // import { config } from 'config'
 import '../css/MasterStyles.css'
 
@@ -73,7 +74,7 @@ const TeamInfo = styled.div `
 `
 const Splash = styled.div `
   width: 100vw;
-  height: calc(100vh - 57px);
+  height: calc(100vh - ${NAV_HEIGHT});
   background-image: url("http://via.placeholder.com/1920x1080");
   background-size: cover;
   background-position: center;
