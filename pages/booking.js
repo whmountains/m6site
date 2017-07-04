@@ -43,7 +43,7 @@ const Title = styled.h1 `
 const Checking = styled.div `
   width: 350px;
   height: 350px;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.89);
   border-radius: 10px;
   padding: 30px;
   display: flex;
@@ -103,7 +103,7 @@ const Room = styled.div `
   overflow: hidden;
   display: inline-flex;
   flex-wrap: wrap;
-  background: #EBEAE8;
+  background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 2px 4px 1px rgba(0,0,0,0.21);
   margin-bottom: 40px;
 `
