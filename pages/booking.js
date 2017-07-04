@@ -7,10 +7,11 @@ import '../css/MasterStyles.css'
 import Buttons from '../components/Buttons'
 import titleUnderline from '../images/brush-strokes/Asorted Strokes.png'
 import userIcon from '../images/user-icon.png'
+import bookingBg from '../images/bookingbg.jpg'
 const Wrapper = styled.div `
   width: 100vw;
   padding: 20px 71px;
-  background-image: url('https://i1.wp.com/techbeasts.com/wp-content/uploads/2016/12/mountain-3d-wallpaper-8.jpg');
+  background-image: url(${bookingBg});
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
