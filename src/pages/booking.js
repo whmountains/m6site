@@ -6,10 +6,11 @@ import '../css/MasterStyles.css'
 import Buttons from '../components/Buttons'
 import titleUnderline from '../images/brush-strokes/Asorted Strokes.png'
 import userIcon from '../images/user-icon.png'
+import bookingBg from '../images/bookingbg.jpg'
 const Wrapper = styled.div `
   width: 100vw;
   padding: 20px 71px;
-  background-image: url('https://i1.wp.com/techbeasts.com/wp-content/uploads/2016/12/mountain-3d-wallpaper-8.jpg');
+  background-image: url(${bookingBg});
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -41,7 +42,7 @@ const Title = styled.h1 `
 const Checking = styled.div `
   width: 350px;
   height: 350px;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.89);
   border-radius: 10px;
   padding: 30px;
   display: flex;
@@ -101,7 +102,7 @@ const Room = styled.div `
   overflow: hidden;
   display: inline-flex;
   flex-wrap: wrap;
-  background: #EBEAE8;
+  background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 2px 4px 1px rgba(0,0,0,0.21);
   margin-bottom: 40px;
 `
