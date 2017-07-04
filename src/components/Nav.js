@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, IndexLink as RRIndexLink } from 'react-router'
+import Link from 'gatsby-link'
 import { lighten } from 'polished'
 
 export const HEIGHT = '60px'
@@ -66,8 +66,6 @@ const NavLink = styled(Link)`
  }
 `
 
-const IndexLink = NavLink.withComponent(RRIndexLink)
-
 export default ({activePath = '/'}) => {
   console.log(activePath)
 
@@ -76,7 +74,7 @@ export default ({activePath = '/'}) => {
       <Logo /> {/* TODO: fill in this image */}
       <Name>El Refugio</Name>
       <Links>
-        <IndexLink activeClassName='active' to='/'>Home</IndexLink>
+        <NavLink activeClassName='active' to='/'>Home</NavLink>
         <NavLink activeClassName='active' to='/lodge/'>Accomodations</NavLink>
         <NavLink activeClassName='active' to='/lake/'>Activities</NavLink>
         <NavLink activeClassName='active' to='/gallery/'>Gallery</NavLink>

@@ -1,7 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
-import { prefixLink } from 'gatsby-helpers'
 import { TypographyStyle } from 'react-typography'
 import typography from './utils/typography'
 
@@ -76,6 +74,7 @@ export default class HTML extends React.Component {
     return (
       <html lang='en'>
         <head>
+          {this.props.headComponents}
           <meta charset='utf-8' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
           <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -90,8 +89,11 @@ export default class HTML extends React.Component {
           {css}
         </head>
         <body>
-          <div id='react-mount' dangerouslySetInnerHTML={{ __html: this.props.body }} />
-          <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+          <div
+            id="___gatsby"
+            dangerouslySetInnerHTML={{ __html: this.props.body }}
+          />
+          {this.props.postBodyComponents}
         </body>
       </html>
     )
