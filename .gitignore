@@ -34,3 +34,6 @@ package-lock.json
 
 # Finder settings
 .DS_Store
+
+# Netlify cache
+.cache
