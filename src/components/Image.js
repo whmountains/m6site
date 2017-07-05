@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import autoBind from 'auto-bind'
 
 const Container = styled.div`
-  display: flex;
   position: relative;
   background: url(${p => p.bg}) center/cover;
   overflow: hidden;
