@@ -66,8 +66,7 @@ const NavLink = styled(Link)`
  }
 `
 
-export default ({activePath = '/'}) => {
-  console.log(activePath)
+export default () => {
 
   return (
     <Container>

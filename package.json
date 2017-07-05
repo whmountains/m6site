@@ -4,8 +4,13 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "auto-bind": "^1.1.0",
     "gatsby": "next",
     "gatsby-link": "^1.0.0-alpha11-alpha.68e8f9a1",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-styled-components": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-sharp": "next",
     "gm": "^1.23.0",
     "jimp": "^0.2.28",
     "object-assign": "^4.1.1",

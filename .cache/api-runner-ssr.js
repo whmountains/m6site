@@ -1,4 +1,7 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/Users/mmc/code/m6site/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    }]
 "use strict";
 
 // During bootstrap, we write requires at top of this file which looks like:

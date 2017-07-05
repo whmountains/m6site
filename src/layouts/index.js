@@ -15,6 +15,7 @@ const Container = styled.div`
 
 export default class Template extends React.Component {
   render () {
+    console.log('layout props', this.props)
     return (
       <Container>
         <Nav />
@@ -28,3 +29,9 @@ export default class Template extends React.Component {
     )
   }
 }
+
+export const pageQuery = graphql`
+  query layoutQuery {
+    ...footer_fragment
+  }
+`

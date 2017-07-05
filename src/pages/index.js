@@ -2,10 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+
 import Footer from '../components/footer'
 import Buttons from '../components/Buttons'
+import Image from '../components/Image'
 import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
-// import { config } from 'config'
+
 import '../css/MasterStyles.css'
 
 import splashImg from '../images/splash-full.jpg'
@@ -42,22 +44,12 @@ const PlaceLeft = styled.div `
   flex-direction: column;
   padding: 0 50px;
 `
-const LeftImage = styled.div `
-  width: 50%;
-  height: 400px;
+
+const LeftImage = styled(Image)`
   transform: rotate(-3deg);
-  background-image: url(${theLodge});
-  background-size: cover;
-  background-position: bottom;
 `
-const RightImage = styled.div `
-  width: 50%;
-  height: 400px;
+const RightImage = styled(Image)`
   transform: rotate(3deg);
-  background-image: url(${theLake});
-  background-size: cover;
-  background-position: bottom;
-  align-self: flex-end;
 `
 const TeamImage = styled.div `
   width: 50%;
@@ -79,26 +71,20 @@ const TeamInfo = styled.div `
 const Splash = styled.div `
   width: 100vw;
   height: calc(80vh - ${NAV_HEIGHT});
-  background-image: url(${splashImg});
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  position: relative;
 `
-const HomeTitle = styled.h1 `
+const HomeTitle = styled.h1`
   color: #FFFFFF;
   text-align: center;
   font-family: Caveat Brush;
   font-size: 75px;
   letter-spacing: 7px;
 `
-const SubTitle = styled.h3 `
+const SubTitle = styled.h3`
   color: #FFFFFF;
   text-align: center;
 `
-const ThePlace = styled.div `
+const ThePlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +94,7 @@ const ThePlace = styled.div `
   padding: 40px 0;
   overflow: hidden;
 `
-const Gallery = styled.div `
+const Gallery = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +102,7 @@ const Gallery = styled.div `
   height: 100vh;
   background: #F3F2F2;
 `
-const TheTeam = styled.div `
+const TheTeam = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,24 +111,53 @@ const TheTeam = styled.div `
   background: #2C5E86;
 `
 
+const Layer = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  ${'' /* z-index: -1; */}
+  overflow: hidden;
+  display: flex;
+`
+
+const SplashText = styled.div`
+  margin: auto;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
 export default class Index extends React.Component {
   render () {
+    const { splashImg, lodgeImg, lakeImg } = this.props.data
+
     return (
       <div id="main">
         <Helmet>
           <title>El Refugio | Home</title>
         </Helmet>
         <Splash>
-          <HomeTitle>For families, by a family.</HomeTitle>
-          <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br/>Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
-          <ButtonsWrapper>
-            <Buttons color='blue'>Reserve a Room</Buttons>
-            <Buttons color='red'>More Info</Buttons>
-          </ButtonsWrapper>
+          <Layer>
+            <Image width='100%' info={splashImg} />
+          </Layer>
+          <Layer>
+            <SplashText>
+              <HomeTitle>For families, by a family.</HomeTitle>
+              <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br/>Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
+              <ButtonsWrapper>
+                <Buttons color='blue'>Reserve a Room</Buttons>
+                <Buttons color='red'>More Info</Buttons>
+              </ButtonsWrapper>
+            </SplashText>
+          </Layer>
         </Splash>
         <ThePlace>
           <PlaceTop>
-            <LeftImage></LeftImage>
+            <LeftImage imgWidth='50%' info={lodgeImg} />
             <PlaceRight>
               <h1>The Lodge</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
@@ -153,7 +168,7 @@ export default class Index extends React.Component {
               <h1>The Lake</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
             </PlaceLeft>
-            <RightImage></RightImage>
+            <RightImage imgWidth='50%' info={lakeImg} />
           </PlaceBottom>
         </ThePlace>
         <Gallery>
@@ -172,3 +187,17 @@ export default class Index extends React.Component {
     )
   }
 }
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    splashImg: imageSharp(id: { regex: "/splash-full/" }) {
+      ...imageInfo
+    }
+    lodgeImg: imageSharp(id: { regex: "/the-lodge/" }) {
+      ...imageInfo
+    }
+    lakeImg: imageSharp(id: { regex: "/the-lake/" }) {
+      ...imageInfo
+    }
+  }
+`

@@ -171,10 +171,229 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/mmc/code/m6site/node_modules/gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "images",
+        "path": "/Users/mmc/code/m6site/src/images"
+      },
+      "pluginFilepath": "/Users/mmc/code/m6site/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.0.0-beta.6",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-source-filesystem",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2eff90504cb2fbcd393d878d2c760304",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/mmc/code/m6site/node_modules/gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.0.0-beta.7",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/mmc/code/m6site/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.0.0-beta.7",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.4.1"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.17.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-sharp",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6dc6692186da554ef3dc2f71cf68d6bc",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/Users/mmc/code/m6site/node_modules/gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "1.0.0-beta.7",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/mmc/code/m6site/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "1.0.0-beta.7",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "sharp",
+          "image"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-transformer-sharp",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "04b3143432f7ae3258a4277d662568ba",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-styled-components": {
+      "resolve": "/Users/mmc/code/m6site/node_modules/gatsby-plugin-styled-components",
+      "name": "gatsby-plugin-styled-components",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/mmc/code/m6site/node_modules/gatsby-plugin-styled-components",
+      "packageJson": {
+        "name": "gatsby-plugin-styled-components",
+        "description": "Gatsby plugin to add support for styled components",
+        "version": "1.0.0-beta.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "styled-components"
+        ],
+        "author": "Guten Ye <ywzhaifei@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "styled-components",
+            "version": "^2.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-styled-components",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6bf153c542e93cd8c8d29d711749c80c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/mmc/code/m6site",
       "name": "default-site-plugin",
-      "version": "c654aab5b86a26b564a4ad7ad5821203",
+      "version": "6c0f55874daf258ccf963d4e24840fab",
       "pluginOptions": {
         "plugins": []
       },
@@ -191,12 +410,32 @@
         "license": "MIT",
         "dependencies": [
           {
+            "name": "auto-bind",
+            "version": "^1.1.0"
+          },
+          {
             "name": "gatsby",
             "version": "next"
           },
           {
             "name": "gatsby-link",
             "version": "^1.0.0-alpha11-alpha.68e8f9a1"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "next"
+          },
+          {
+            "name": "gatsby-plugin-styled-components",
+            "version": "next"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "next"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "next"
           },
           {
             "name": "gm",
@@ -265,25 +504,826 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "043242c78b4c333d042365ef9d0e2935",
+        "contentDigest": "0021e8d2e0cb0a5ccdc8fc301d8bec2c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {
-        "title": "My Sweet Gatsby Site!"
+        "title": "Some Title"
       },
       "port": "8000",
       "host": "localhost",
-      "buildTime": "2017-07-04T22:58:55.092Z",
+      "buildTime": "2017-07-05T18:58:47.133Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "4cd0ff5b5f7c6814ad7c77a6f204ae00",
+        "contentDigest": "9210cebcf84480f0bb67414a3c953324",
         "type": "Site",
         "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/user-icon.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/user-icon.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/user-icon.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0e2d903d47176e8d432d64aed96ff50c",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/user-icon.png",
+      "relativePath": "user-icon.png",
+      "extension": "png",
+      "size": 6801,
+      "prettySize": "6.8 kB",
+      "modifiedTime": "2017-07-03T21:18:03.180Z",
+      "accessTime": "2017-07-05T18:56:11.242Z",
+      "changeTime": "2017-07-03T21:18:03.180Z",
+      "birthTime": "2017-07-03T21:18:03.179Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "user-icon.png",
+      "ext": ".png",
+      "name": "user-icon",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884890,
+      "blocks": 16,
+      "atimeMs": 1499280971242.2542,
+      "mtimeMs": 1499116683179.6096,
+      "ctimeMs": 1499116683179.6096,
+      "birthtimeMs": 1499116683179.376,
+      "atime": "2017-07-05T18:56:11.242Z",
+      "mtime": "2017-07-03T21:18:03.180Z",
+      "ctime": "2017-07-03T21:18:03.180Z",
+      "birthtime": "2017-07-03T21:18:03.179Z"
+    },
+    "/Users/mmc/code/m6site/src/images/.DS_Store absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/.DS_Store absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "4c132022b85b2e4e2a96f2b898977489",
+        "mediaType": "application/octet-stream",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/.DS_Store",
+      "relativePath": ".DS_Store",
+      "extension": "",
+      "size": 8196,
+      "prettySize": "8.2 kB",
+      "modifiedTime": "2017-07-03T23:21:40.839Z",
+      "accessTime": "2017-07-05T18:56:11.243Z",
+      "changeTime": "2017-07-03T23:21:40.839Z",
+      "birthTime": "2017-07-03T21:18:03.055Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": ".DS_Store",
+      "ext": "",
+      "name": ".DS_Store",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884881,
+      "blocks": 24,
+      "atimeMs": 1499280971242.6055,
+      "mtimeMs": 1499124100838.6501,
+      "ctimeMs": 1499124100838.6501,
+      "birthtimeMs": 1499116683055.343,
+      "atime": "2017-07-05T18:56:11.243Z",
+      "mtime": "2017-07-03T23:21:40.839Z",
+      "ctime": "2017-07-03T23:21:40.839Z",
+      "birthtime": "2017-07-03T21:18:03.055Z"
+    },
+    "/Users/mmc/code/m6site/src/images/user-icon.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/user-icon.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/user-icon.png absPath of file",
+      "internal": {
+        "contentDigest": "0e2d903d47176e8d432d64aed96ff50c",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "264fd7a02c4ad1aa96d4553b90ded2f9",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png",
+      "relativePath": "brush-strokes/Small Stroke.png",
+      "extension": "png",
+      "size": 157835,
+      "prettySize": "158 kB",
+      "modifiedTime": "2017-07-03T21:18:03.059Z",
+      "accessTime": "2017-07-05T18:56:11.256Z",
+      "changeTime": "2017-07-03T21:18:03.059Z",
+      "birthTime": "2017-07-03T21:18:03.058Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Small Stroke.png",
+      "ext": ".png",
+      "name": "Small Stroke",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884884,
+      "blocks": 312,
+      "atimeMs": 1499280971255.7634,
+      "mtimeMs": 1499116683058.6975,
+      "ctimeMs": 1499116683058.6975,
+      "birthtimeMs": 1499116683058.1077,
+      "atime": "2017-07-05T18:56:11.256Z",
+      "mtime": "2017-07-03T21:18:03.059Z",
+      "ctime": "2017-07-03T21:18:03.059Z",
+      "birthtime": "2017-07-03T21:18:03.058Z"
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/brush-strokes/Small Stroke.png absPath of file",
+      "internal": {
+        "contentDigest": "264fd7a02c4ad1aa96d4553b90ded2f9",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2491793f6f247754c3e2c3af0dae40e2",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png",
+      "relativePath": "brush-strokes/Asorted Strokes.png",
+      "extension": "png",
+      "size": 343762,
+      "prettySize": "344 kB",
+      "modifiedTime": "2017-07-03T21:18:03.058Z",
+      "accessTime": "2017-07-05T18:56:11.269Z",
+      "changeTime": "2017-07-03T21:18:03.058Z",
+      "birthTime": "2017-07-03T21:18:03.056Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Asorted Strokes.png",
+      "ext": ".png",
+      "name": "Asorted Strokes",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884883,
+      "blocks": 672,
+      "atimeMs": 1499280971269.4424,
+      "mtimeMs": 1499116683057.7246,
+      "ctimeMs": 1499116683057.7246,
+      "birthtimeMs": 1499116683055.681,
+      "atime": "2017-07-05T18:56:11.269Z",
+      "mtime": "2017-07-03T21:18:03.058Z",
+      "ctime": "2017-07-03T21:18:03.058Z",
+      "birthtime": "2017-07-03T21:18:03.056Z"
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/brush-strokes/Asorted Strokes.png absPath of file",
+      "internal": {
+        "contentDigest": "2491793f6f247754c3e2c3af0dae40e2",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "77ff3e4557bba4b98939ad473ff464fa",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png",
+      "relativePath": "brush-strokes/Stroke 5.png",
+      "extension": "png",
+      "size": 1027599,
+      "prettySize": "1.03 MB",
+      "modifiedTime": "2017-07-03T21:18:03.072Z",
+      "accessTime": "2017-07-05T18:56:11.294Z",
+      "changeTime": "2017-07-03T21:18:03.072Z",
+      "birthTime": "2017-07-03T21:18:03.067Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Stroke 5.png",
+      "ext": ".png",
+      "name": "Stroke 5",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884886,
+      "blocks": 2008,
+      "atimeMs": 1499280971293.6304,
+      "mtimeMs": 1499116683072.3047,
+      "ctimeMs": 1499116683072.3047,
+      "birthtimeMs": 1499116683066.5845,
+      "atime": "2017-07-05T18:56:11.294Z",
+      "mtime": "2017-07-03T21:18:03.072Z",
+      "ctime": "2017-07-03T21:18:03.072Z",
+      "birthtime": "2017-07-03T21:18:03.067Z"
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 5.png absPath of file",
+      "internal": {
+        "contentDigest": "77ff3e4557bba4b98939ad473ff464fa",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "91f1796d5f90cc5f0291b3f2cab4fb7c",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png",
+      "relativePath": "brush-strokes/Stroke 4.png",
+      "extension": "png",
+      "size": 1101950,
+      "prettySize": "1.1 MB",
+      "modifiedTime": "2017-07-03T21:18:03.066Z",
+      "accessTime": "2017-07-05T18:56:11.295Z",
+      "changeTime": "2017-07-03T21:18:03.066Z",
+      "birthTime": "2017-07-03T21:18:03.059Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Stroke 4.png",
+      "ext": ".png",
+      "name": "Stroke 4",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884885,
+      "blocks": 2160,
+      "atimeMs": 1499280971294.692,
+      "mtimeMs": 1499116683065.5527,
+      "ctimeMs": 1499116683065.5527,
+      "birthtimeMs": 1499116683058.9287,
+      "atime": "2017-07-05T18:56:11.295Z",
+      "mtime": "2017-07-03T21:18:03.066Z",
+      "ctime": "2017-07-03T21:18:03.066Z",
+      "birthtime": "2017-07-03T21:18:03.059Z"
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5b822d5aa434ccba9695a3dbf9943479",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png",
+      "relativePath": "brush-strokes/Stroke 6.png",
+      "extension": "png",
+      "size": 1109096,
+      "prettySize": "1.11 MB",
+      "modifiedTime": "2017-07-03T21:18:03.080Z",
+      "accessTime": "2017-07-05T18:56:11.296Z",
+      "changeTime": "2017-07-03T21:18:03.080Z",
+      "birthTime": "2017-07-03T21:18:03.073Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Stroke 6.png",
+      "ext": ".png",
+      "name": "Stroke 6",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884887,
+      "blocks": 2168,
+      "atimeMs": 1499280971295.9744,
+      "mtimeMs": 1499116683079.75,
+      "ctimeMs": 1499116683079.75,
+      "birthtimeMs": 1499116683073.4712,
+      "atime": "2017-07-05T18:56:11.296Z",
+      "mtime": "2017-07-03T21:18:03.080Z",
+      "ctime": "2017-07-03T21:18:03.080Z",
+      "birthtime": "2017-07-03T21:18:03.073Z"
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 4.png absPath of file",
+      "internal": {
+        "contentDigest": "91f1796d5f90cc5f0291b3f2cab4fb7c",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke 6.png absPath of file",
+      "internal": {
+        "contentDigest": "5b822d5aa434ccba9695a3dbf9943479",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ff7bb59524d06379d2ff8f7aa89c6c89",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png",
+      "relativePath": "brush-strokes/Stroke1.png",
+      "extension": "png",
+      "size": 1129826,
+      "prettySize": "1.13 MB",
+      "modifiedTime": "2017-07-03T21:18:03.088Z",
+      "accessTime": "2017-07-05T18:56:11.303Z",
+      "changeTime": "2017-07-03T21:18:03.088Z",
+      "birthTime": "2017-07-03T21:18:03.081Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Stroke1.png",
+      "ext": ".png",
+      "name": "Stroke1",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884888,
+      "blocks": 2208,
+      "atimeMs": 1499280971303.4617,
+      "mtimeMs": 1499116683087.6196,
+      "ctimeMs": 1499116683087.6196,
+      "birthtimeMs": 1499116683080.8115,
+      "atime": "2017-07-05T18:56:11.303Z",
+      "mtime": "2017-07-03T21:18:03.088Z",
+      "ctime": "2017-07-03T21:18:03.088Z",
+      "birthtime": "2017-07-03T21:18:03.081Z"
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/brush-strokes/Stroke1.png absPath of file",
+      "internal": {
+        "contentDigest": "ff7bb59524d06379d2ff8f7aa89c6c89",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/bookingbg.jpg absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/bookingbg.jpg absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/bookingbg.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e0a9b6d6f94f29d2b69f5c3accb8981e",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/bookingbg.jpg",
+      "relativePath": "bookingbg.jpg",
+      "extension": "jpg",
+      "size": 7017981,
+      "prettySize": "7.02 MB",
+      "modifiedTime": "2017-07-04T23:00:02.280Z",
+      "accessTime": "2017-07-05T18:56:11.458Z",
+      "changeTime": "2017-07-04T23:00:17.320Z",
+      "birthTime": "2017-07-04T23:00:02.249Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "bookingbg.jpg",
+      "ext": ".jpg",
+      "name": "bookingbg",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 2078180,
+      "blocks": 13712,
+      "atimeMs": 1499280971458.1455,
+      "mtimeMs": 1499209202279.7883,
+      "ctimeMs": 1499209217319.6812,
+      "birthtimeMs": 1499209202249.4414,
+      "atime": "2017-07-05T18:56:11.458Z",
+      "mtime": "2017-07-04T23:00:02.280Z",
+      "ctime": "2017-07-04T23:00:17.320Z",
+      "birthtime": "2017-07-04T23:00:02.249Z"
+    },
+    "/Users/mmc/code/m6site/src/images/bookingbg.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/bookingbg.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/bookingbg.jpg absPath of file",
+      "internal": {
+        "contentDigest": "e0a9b6d6f94f29d2b69f5c3accb8981e",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/mtn-pano.jpg absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/mtn-pano.jpg absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/mtn-pano.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0ee5f4d54a58cfeb2101cb976f05ad36",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/mtn-pano.jpg",
+      "relativePath": "mtn-pano.jpg",
+      "extension": "jpg",
+      "size": 7461862,
+      "prettySize": "7.46 MB",
+      "modifiedTime": "2017-07-03T23:15:44.242Z",
+      "accessTime": "2017-07-05T18:56:11.467Z",
+      "changeTime": "2017-07-03T23:15:49.903Z",
+      "birthTime": "2017-07-03T23:15:40.233Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "mtn-pano.jpg",
+      "ext": ".jpg",
+      "name": "mtn-pano",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 1205551,
+      "blocks": 14576,
+      "atimeMs": 1499280971466.5933,
+      "mtimeMs": 1499123744242.0227,
+      "ctimeMs": 1499123749903.1394,
+      "birthtimeMs": 1499123740233.0017,
+      "atime": "2017-07-05T18:56:11.467Z",
+      "mtime": "2017-07-03T23:15:44.242Z",
+      "ctime": "2017-07-03T23:15:49.903Z",
+      "birthtime": "2017-07-03T23:15:40.233Z"
+    },
+    "/Users/mmc/code/m6site/src/images/mtn-pano.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/mtn-pano.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/mtn-pano.jpg absPath of file",
+      "internal": {
+        "contentDigest": "0ee5f4d54a58cfeb2101cb976f05ad36",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "666358b7ca5bb0571f21ca33c624eba3",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/splash-full.jpg",
+      "relativePath": "splash-full.jpg",
+      "extension": "jpg",
+      "size": 11161417,
+      "prettySize": "11.2 MB",
+      "modifiedTime": "2017-07-03T23:01:31.329Z",
+      "accessTime": "2017-07-05T18:56:11.505Z",
+      "changeTime": "2017-07-03T23:02:27.677Z",
+      "birthTime": "2017-07-03T23:01:25.291Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "splash-full.jpg",
+      "ext": ".jpg",
+      "name": "splash-full",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 1204854,
+      "blocks": 21800,
+      "atimeMs": 1499280971504.8938,
+      "mtimeMs": 1499122891328.602,
+      "ctimeMs": 1499122947677.4272,
+      "birthtimeMs": 1499122885290.9478,
+      "atime": "2017-07-05T18:56:11.505Z",
+      "mtime": "2017-07-03T23:01:31.329Z",
+      "ctime": "2017-07-03T23:02:27.677Z",
+      "birthtime": "2017-07-03T23:01:25.291Z"
+    },
+    "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file",
+      "internal": {
+        "contentDigest": "666358b7ca5bb0571f21ca33c624eba3",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/brush-strokes/Strokes.psd absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/brush-strokes/Strokes.psd absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d744d314efb5dec8b63c557316771fb4",
+        "mediaType": "image/vnd.adobe.photoshop",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/brush-strokes/Strokes.psd",
+      "relativePath": "brush-strokes/Strokes.psd",
+      "extension": "psd",
+      "size": 11989034,
+      "prettySize": "12 MB",
+      "modifiedTime": "2017-07-03T21:18:03.165Z",
+      "accessTime": "2017-07-05T18:56:11.517Z",
+      "changeTime": "2017-07-03T21:18:03.165Z",
+      "birthTime": "2017-07-03T21:18:03.089Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images/brush-strokes",
+      "base": "Strokes.psd",
+      "ext": ".psd",
+      "name": "Strokes",
+      "dev": 16777221,
+      "mode": 33261,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 884889,
+      "blocks": 23424,
+      "atimeMs": 1499280971516.9526,
+      "mtimeMs": 1499116683165.467,
+      "ctimeMs": 1499116683165.467,
+      "birthtimeMs": 1499116683088.7383,
+      "atime": "2017-07-05T18:56:11.517Z",
+      "mtime": "2017-07-03T21:18:03.165Z",
+      "ctime": "2017-07-03T21:18:03.165Z",
+      "birthtime": "2017-07-03T21:18:03.089Z"
+    },
+    "/Users/mmc/code/m6site/src/images/team.jpg absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/team.jpg absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/team.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0b9e98360b5d893dd7996aeef4f1339d",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/team.jpg",
+      "relativePath": "team.jpg",
+      "extension": "jpg",
+      "size": 12616284,
+      "prettySize": "12.6 MB",
+      "modifiedTime": "2017-07-03T23:11:50.167Z",
+      "accessTime": "2017-07-05T18:56:11.521Z",
+      "changeTime": "2017-07-03T23:12:07.864Z",
+      "birthTime": "2017-07-03T23:11:48.193Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "team.jpg",
+      "ext": ".jpg",
+      "name": "team",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 1205341,
+      "blocks": 24648,
+      "atimeMs": 1499280971521.3713,
+      "mtimeMs": 1499123510167.4807,
+      "ctimeMs": 1499123527864.4067,
+      "birthtimeMs": 1499123508192.823,
+      "atime": "2017-07-05T18:56:11.521Z",
+      "mtime": "2017-07-03T23:11:50.167Z",
+      "ctime": "2017-07-03T23:12:07.864Z",
+      "birthtime": "2017-07-03T23:11:48.193Z"
+    },
+    "/Users/mmc/code/m6site/src/images/team.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/team.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/team.jpg absPath of file",
+      "internal": {
+        "contentDigest": "0b9e98360b5d893dd7996aeef4f1339d",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0b6d0a4b271aea2eb25cd853085b4f8e",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/the-lake.jpg",
+      "relativePath": "the-lake.jpg",
+      "extension": "jpg",
+      "size": 14673111,
+      "prettySize": "14.7 MB",
+      "modifiedTime": "2017-07-03T23:09:11.263Z",
+      "accessTime": "2017-07-05T18:56:11.531Z",
+      "changeTime": "2017-07-03T23:09:49.471Z",
+      "birthTime": "2017-07-03T23:09:02.206Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "the-lake.jpg",
+      "ext": ".jpg",
+      "name": "the-lake",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 1205215,
+      "blocks": 28664,
+      "atimeMs": 1499280971530.985,
+      "mtimeMs": 1499123351262.6682,
+      "ctimeMs": 1499123389470.8896,
+      "birthtimeMs": 1499123342206.275,
+      "atime": "2017-07-05T18:56:11.531Z",
+      "mtime": "2017-07-03T23:09:11.263Z",
+      "ctime": "2017-07-03T23:09:49.471Z",
+      "birthtime": "2017-07-03T23:09:02.206Z"
+    },
+    "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file",
+      "internal": {
+        "contentDigest": "0b6d0a4b271aea2eb25cd853085b4f8e",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file": {
+      "id": "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file",
+      "children": [
+        "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "9e70ea7b21e8c169f06d3921436fff83",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/mmc/code/m6site/src/images/the-lodge.jpg",
+      "relativePath": "the-lodge.jpg",
+      "extension": "jpg",
+      "size": 22188655,
+      "prettySize": "22.2 MB",
+      "modifiedTime": "2017-07-03T23:07:15.545Z",
+      "accessTime": "2017-07-05T18:56:11.553Z",
+      "changeTime": "2017-07-03T23:07:24.168Z",
+      "birthTime": "2017-07-03T23:07:10.308Z",
+      "root": "/",
+      "dir": "/Users/mmc/code/m6site/src/images",
+      "base": "the-lodge.jpg",
+      "ext": ".jpg",
+      "name": "the-lodge",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 1205096,
+      "blocks": 43344,
+      "atimeMs": 1499280971553.4954,
+      "mtimeMs": 1499123235545.2324,
+      "ctimeMs": 1499123244168.2422,
+      "birthtimeMs": 1499123230307.721,
+      "atime": "2017-07-05T18:56:11.553Z",
+      "mtime": "2017-07-03T23:07:15.545Z",
+      "ctime": "2017-07-03T23:07:24.168Z",
+      "birthtime": "2017-07-03T23:07:10.308Z"
+    },
+    "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file",
+      "internal": {
+        "contentDigest": "9e70ea7b21e8c169f06d3921436fff83",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
     "SitePage /booking/": {
@@ -340,10 +1380,31 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "0df68e01ff42cd3fb9572e6b99f0b716"
+    "PLUGINS_HASH": "7b86efb9b13dbd609d453028895bd1fa"
   },
   "pageDataDependencies": {
-    "nodes": {},
+    "nodes": {
+      "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file >> ImageSharp": [
+        "/img-test/",
+        "/"
+      ],
+      "/Users/mmc/code/m6site/src/images/splash-full.jpg absPath of file": [
+        "/img-test/",
+        "/"
+      ],
+      "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/mmc/code/m6site/src/images/the-lodge.jpg absPath of file": [
+        "/"
+      ],
+      "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/mmc/code/m6site/src/images/the-lake.jpg absPath of file": [
+        "/"
+      ]
+    },
     "connections": {
       "SitePage": [
         "/dev-404-page/"
