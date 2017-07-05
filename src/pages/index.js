@@ -78,7 +78,7 @@ const Splash = styled.div `
 const HomeTitle = styled.h1`
   color: #FFFFFF;
   text-align: center;
-  font-family: Caveat Brush;
+  font-family: caveat_brushregular;
   font-size: 75px;
   letter-spacing: 7px;
 `
