@@ -9,6 +9,7 @@ const Container = styled.div`
   overflow: hidden;
   background-color: #f6f6f6;
   ${p => `width: ` + p.width + ';'}
+  ${p => `height: ` + p.height + ';'}
 `
 
 const Img = styled.img`
@@ -18,14 +19,8 @@ const Img = styled.img`
   transition: opacity 0.5s linear;
   margin: 0;
   width: 100%;
-`
-
-const SmallImage = Img.extend`
   height: 100%;
   object-fit: cover;
-`
-
-const LargeImage = Img.extend`
 `
 
 const AspectRatioPreserver = styled.div`
@@ -52,10 +47,13 @@ export default class Image extends React.Component {
     console.log('image', this.props)
 
     return (
-      <Container width={this.props.width || this.props.imgWidth} className={this.props.className}>
+      <Container
+        height={this.props.height}
+        width={this.props.width || this.props.imgWidth}
+        className={this.props.className} >
         <AspectRatioPreserver ratio={image.aspectRatio} />
-        <SmallImage src={image.base64} />
-        <LargeImage
+        <Img src={image.base64} />
+        <Img
           srcSet={image.srcSet}
           src={image.src}
           onLoad={this.loadFullImage}

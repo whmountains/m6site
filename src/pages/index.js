@@ -140,7 +140,7 @@ const SplashSep = styled.img `
 `
 export default class Index extends React.Component {
   render () {
-    const { splashImg, lodgeImg, lakeImg } = this.props.data
+    const { splashImg, lodgeImg, lakeImg, teamImg } = this.props.data
 
     return (
       <div id='main'>
@@ -169,7 +169,7 @@ export default class Index extends React.Component {
             <PlaceRight>
               <h1>The Lodge</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-          </PlaceRight>
+            </PlaceRight>
           </PlaceTop>
           <PlaceBottom>
             <PlaceLeft>
@@ -183,7 +183,9 @@ export default class Index extends React.Component {
           <h1>Gallery</h1>
         </Gallery>
         <TheTeam>
-          <TeamImage src='http://via.placeholder.com/800x1080'/>
+          <TeamImage>
+            <Image height='100%' info={teamImg} />
+          </TeamImage>
           <TeamInfo>
             <h1>The Team</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
@@ -205,6 +207,9 @@ export const pageQuery = graphql`
       ...imageInfo
     }
     lakeImg: imageSharp(id: { regex: "/the-lake/" }) {
+      ...imageInfo
+    }
+    teamImg: imageSharp(id: { regex: "/team/" }) {
       ...imageInfo
     }
   }
