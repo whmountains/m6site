@@ -13,7 +13,7 @@ const Container = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 99;
 
   background: ${BACKGROUND};
   border-bottom: 5px solid ${ACCENT};
