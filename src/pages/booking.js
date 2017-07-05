@@ -26,7 +26,7 @@ const TitleWrapper = styled.div `
 `
 const Title = styled.h1 `
   color: white;
-  font-family: Caveat Brush;
+  font-family: caveat_brushregular;
   font-size: 70px;
   &:after {
     content: '';
