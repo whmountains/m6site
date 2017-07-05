@@ -149,8 +149,8 @@ export default class Index extends React.Component {
               <HomeTitle>For families, by a family.</HomeTitle>
               <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br/>Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
               <ButtonsWrapper>
-                <Buttons color='blue'>Reserve a Room</Buttons>
-                <Buttons color='red'>More Info</Buttons>
+                <Buttons color='blue' to='booking'>Reserve a Room</Buttons>
+                <Buttons color='red' to='activities'>More Info</Buttons>
               </ButtonsWrapper>
             </SplashText>
           </Layer>
