@@ -134,9 +134,9 @@ const SplashText = styled.div`
   flex-direction: column;
 `
 const SplashSep = styled.img `
-  width: 100%;
+  height: 70px;
   position: absolute;
-  margin-top: -20px;
+  margin-top: -35px;
 `
 export default class Index extends React.Component {
   render () {

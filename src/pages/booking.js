@@ -11,7 +11,7 @@ const Wrapper = styled.div `
   width: 100vw;
   padding: 20px 71px;
   background-image: url(${bookingBg});
-  background-size: cover;
+  background-size: 1920px;
   background-position: center;
   background-attachment: fixed;
   display: flex;
@@ -40,6 +40,7 @@ const Title = styled.h1 `
   }
 `
 const Checking = styled.div `
+  position: relative;
   width: 350px;
   height: 350px;
   background: rgba(255, 255, 255, 0.89);
@@ -49,6 +50,20 @@ const Checking = styled.div `
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 10;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('${bookingBg}');
+    background-size: 1920px;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(20px);
+    z-index: 1;
+  }
 `
 const Dates = {
   display: 'flex',
