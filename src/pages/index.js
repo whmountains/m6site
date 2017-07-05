@@ -10,6 +10,8 @@ import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 
 import '../css/MasterStyles.css'
 
+import Brush1 from '../images/brush-strokes/Stroke 5.png'
+
 import splashImg from '../images/splash-full.jpg'
 import theLodge from '../images/the-lodge.jpg'
 import theLake from '../images/the-lake.jpg'
@@ -69,7 +71,7 @@ const TeamInfo = styled.div `
   padding: 0 50px;
 `
 const Splash = styled.div `
-  width: 100vw;
+  width: 100%;
   height: calc(80vh - ${NAV_HEIGHT});
   position: relative;
 `
@@ -89,16 +91,17 @@ const ThePlace = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   background: #fff;
   padding: 40px 0;
   overflow: hidden;
+  background: linear-gradient(270deg, #A6D2EC, white);
 `
 const Gallery = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: #F3F2F2;
 `
@@ -106,9 +109,9 @@ const TheTeam = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background: #2C5E86;
+  padding: 20px 5px;
 `
 
 const Layer = styled.div`
@@ -130,13 +133,17 @@ const SplashText = styled.div`
   align-items: center;
   flex-direction: column;
 `
-
+const SplashSep = styled.img `
+  width: 100%;
+  position: absolute;
+  margin-top: -20px;
+`
 export default class Index extends React.Component {
   render () {
     const { splashImg, lodgeImg, lakeImg } = this.props.data
 
     return (
-      <div id="main">
+      <div id='main'>
         <Helmet>
           <title>El Refugio | Home</title>
         </Helmet>
@@ -147,7 +154,7 @@ export default class Index extends React.Component {
           <Layer>
             <SplashText>
               <HomeTitle>For families, by a family.</HomeTitle>
-              <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br/>Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
+              <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br />Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
               <ButtonsWrapper>
                 <Buttons color='blue' to='booking'>Reserve a Room</Buttons>
                 <Buttons color='red' to='activities'>More Info</Buttons>
@@ -155,6 +162,7 @@ export default class Index extends React.Component {
             </SplashText>
           </Layer>
         </Splash>
+        <SplashSep src={Brush1} />
         <ThePlace>
           <PlaceTop>
             <LeftImage imgWidth='50%' info={lodgeImg} />
@@ -175,7 +183,7 @@ export default class Index extends React.Component {
           <h1>Gallery</h1>
         </Gallery>
         <TheTeam>
-          <TeamImage src="http://via.placeholder.com/800x1080"/>
+          <TeamImage src='http://via.placeholder.com/800x1080'/>
           <TeamInfo>
             <h1>The Team</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
