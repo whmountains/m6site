@@ -15,7 +15,6 @@ const Container = styled.div`
 
 export default class Template extends React.Component {
   render () {
-    console.log('layout props', this.props)
     return (
       <Container>
         <Nav />

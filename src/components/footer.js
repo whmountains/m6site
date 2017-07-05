@@ -39,9 +39,6 @@ const ImgWrapper = styled.div`
   left: 0;
 `
 export default (props) => {
-
-  console.log('footer props', props)
-
   // const img = data.testImg.responsiveResolution
   const img = {}
 
