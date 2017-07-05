@@ -138,12 +138,14 @@ const SplashSep = styled.img `
   position: absolute;
   margin-top: -35px;
 `
+const Container = styled.div``
+
 export default class Index extends React.Component {
   render () {
     const { splashImg, lodgeImg, lakeImg, teamImg } = this.props.data
 
     return (
-      <div id='main'>
+      <Container>
         <Helmet>
           <title>El Refugio | Home</title>
         </Helmet>
@@ -193,7 +195,7 @@ export default class Index extends React.Component {
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
           </TeamInfo>
         </TheTeam>
-      </div>
+      </Container>
     )
   }
 }

@@ -174,71 +174,69 @@ const CheckMark = {
 export default class Index extends React.Component {
   render () {
     return (
-      <div id='main'>
-        <Helmet>
-          <title>El Refugio | Booking</title>
-        </Helmet>
-        <Wrapper>
-          <TitleWrapper>
-            <Title>Choose Your Adventure</Title>
-          </TitleWrapper>
-          <Checking>
-            <BlurBg />
-            <NonBlur />
-            <div style={Dates}>
-              <DateTitle>Check in</DateTitle>
-              <DateTitle>Check out</DateTitle>
-              <DateInput style={LeftBorders}>mm/dd/yyyy</DateInput>
-              <DateInput style={RightBorders}>mm/dd/yyyy</DateInput>
-            </div>
-            <Guests>
-              <option>1 Guest</option>
-              <option>2 Guest</option>
-              <option>3 Guest</option>
-              <option>4 Guest</option>
-            </Guests>
-            <Buttons color='blue'>Check Dates</Buttons>
-          </Checking>
-          <Rooms>
-            <Room>
-              <Photo />
-              <Info>
-                <Desc>
-                  <Name>The Quark Room</Name>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
-                </Desc>
-                <BuyNow>
-                  <Buttons color='red'>Select</Buttons>
-                  <Price>$300 per night</Price>
-                </BuyNow>
-              </Info>
-              <Accommodations>
-                <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
-                <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
-                <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
-              </Accommodations>
-            </Room>
-            <Room>
-              <Photo />
-              <Info>
-                <Desc>
-                  <Name>The Quark Room</Name>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
-                </Desc>
-                <BuyNow>
-                  <Buttons color='red'>Select</Buttons>
-                  <Price>$300 per night</Price>
-                </BuyNow>
-              </Info>
-              <Accommodations>
-                <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
-                <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
-                <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
-              </Accommodations>
-            </Room>
-          </Rooms>
-        </Wrapper>
-      </div>
+      <Wrapper>
+        <TitleWrapper>
+          <Helmet>
+            <title>El Refugio | Booking</title>
+          </Helmet>
+          <Title>Choose Your Adventure</Title>
+        </TitleWrapper>
+        <Checking>
+          <BlurBg />
+          <NonBlur />
+          <div style={Dates}>
+            <DateTitle>Check in</DateTitle>
+            <DateTitle>Check out</DateTitle>
+            <DateInput style={LeftBorders}>mm/dd/yyyy</DateInput>
+            <DateInput style={RightBorders}>mm/dd/yyyy</DateInput>
+          </div>
+          <Guests>
+            <option>1 Guest</option>
+            <option>2 Guest</option>
+            <option>3 Guest</option>
+            <option>4 Guest</option>
+          </Guests>
+          <Buttons color='blue'>Check Dates</Buttons>
+        </Checking>
+        <Rooms>
+          <Room>
+            <Photo />
+            <Info>
+              <Desc>
+                <Name>The Quark Room</Name>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+              </Desc>
+              <BuyNow>
+                <Buttons color='red'>Select</Buttons>
+                <Price>$300 per night</Price>
+              </BuyNow>
+            </Info>
+            <Accommodations>
+              <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
+              <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
+              <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
+            </Accommodations>
+          </Room>
+          <Room>
+            <Photo />
+            <Info>
+              <Desc>
+                <Name>The Quark Room</Name>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+              </Desc>
+              <BuyNow>
+                <Buttons color='red'>Select</Buttons>
+                <Price>$300 per night</Price>
+              </BuyNow>
+            </Info>
+            <Accommodations>
+              <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
+              <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
+              <Item><i style={CheckMark} className='fa fa-check-circle' aria-hidden='true'></i> Free Internet</Item>
+            </Accommodations>
+          </Room>
+        </Rooms>
+      </Wrapper>
     )
   }
 }
