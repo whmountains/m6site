@@ -28,9 +28,3 @@ export default class Template extends React.Component {
     )
   }
 }
-
-export const pageQuery = graphql`
-  query layoutQuery {
-    ...footer_fragment
-  }
-`
