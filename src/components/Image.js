@@ -4,7 +4,6 @@ import autoBind from 'auto-bind'
 
 const Container = styled.div`
   position: relative;
-  background: url(${p => p.bg}) center/cover;
   overflow: hidden;
   background-color: #f6f6f6;
   ${p => `width: ` + p.width + ';'}
