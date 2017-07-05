@@ -20,6 +20,7 @@ const Img = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${p => p.blur && 'filter(blur(7px));'}
 `
 
 const AspectRatioPreserver = styled.div`
@@ -51,7 +52,7 @@ export default class Image extends React.Component {
         width={this.props.width || this.props.imgWidth}
         className={this.props.className} >
         <AspectRatioPreserver ratio={image.aspectRatio} />
-        <Img src={image.base64} />
+        <Img blur src={image.base64} />
         <Img
           srcSet={image.srcSet}
           src={image.src}
