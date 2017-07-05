@@ -65,7 +65,7 @@ export default class HTML extends React.Component {
       css = [
         <style
           dangerouslySetInnerHTML={{
-            __html: require('!raw!./public/styles.css')
+            __html: require('!raw!../public/styles.css')
           }}
         />
       ]

@@ -1,19 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "component": "/Users/mmc/code/m6site/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
-      "componentChunkName": "page-component---cache-dev-404-page-js",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4775bda3286b27b61a5b3d204873f730",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -513,14 +507,12 @@
       "siteMetadata": {
         "title": "Some Title"
       },
-      "port": "8000",
-      "host": "localhost",
-      "buildTime": "2017-07-05T18:58:47.133Z",
+      "buildTime": "2017-07-05T19:11:21.394Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9210cebcf84480f0bb67414a3c953324",
+        "contentDigest": "e8e7c20f5296cadf900a292e6f63158d",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
