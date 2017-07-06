@@ -5,6 +5,7 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   height: 0;
+  ${p => p.zIndex && `z-index: ${p.zIndex};`}
 `
 
 const Svg = styled.svg`
@@ -14,6 +15,7 @@ const Svg = styled.svg`
     transform: rotate(180deg);
     bottom: -1px;
   ` : css`
+    ${p => p.shadow && 'filter: drop-shadow( 0 8px 3px rgba(0, 0, 0, 0.41));'}
     top: -1px;
   `}
 `
@@ -28,7 +30,7 @@ export default class Stroke extends React.Component {
     counter++
   }
   render() {
-    let {color = 'white', startColor, endColor, className, flatEdge} = this.props
+    let {color = 'white', startColor, endColor, className, flatEdge, zIndex, shadow} = this.props
 
     startColor = startColor || color
     endColor = endColor || color
@@ -40,11 +42,9 @@ export default class Stroke extends React.Component {
       endColor = tmp
     }
 
-    console.log(flatEdge, startColor, endColor)
-
     return (
-      <Container>
-        <Svg flatEdge={flatEdge} className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6878 161">
+      <Container zIndex={zIndex}>
+        <Svg shadow={shadow} flatEdge={flatEdge} className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6878 161">
           <linearGradient id={'StrokeGradient' + this.id}>
             <stop offset="0%" stopColor={startColor}/>
             <stop offset="100%" stopColor={endColor}/>

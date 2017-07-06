@@ -1,24 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Image from './Image'
+import Layer from './Layer'
+
 export const HEIGHT = '400px'
 
-const Footer = styled.div `
+const Footer = styled.div`
+  padding-bottom: ${HEIGHT}
+`
+
+const FixedFooter = styled.div `
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  z-index: -5;
+  width: 100%;
   height: ${HEIGHT};
-  background-image: url(${p => p.bg});
-  background-size: cover;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 const QuoteWrapper = styled.div `
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #fff;
 `
@@ -31,37 +36,21 @@ const Bg = styled.img`
   min-height: 100%;
   min-width: 100%;
 `
-const ImgWrapper = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-`
-export default (props) => {
-  // const img = data.testImg.responsiveResolution
-  const img = {}
 
+export default ({bgImg}) => {
   return (
     <Footer>
-      <ImgWrapper>
-        <Bg src={img.src} srcset={img.srcSet} />
-      </ImgWrapper>
-      <QuoteWrapper>
-        <Quote>Maybe a quote or something</Quote>
-        <Author>-Jonathan Jenson</Author>
-      </QuoteWrapper>
+      <FixedFooter>
+        <Layer>
+          <Image info={bgImg} width='100%' />
+        </Layer>
+        <Layer>
+          <QuoteWrapper>
+            <Quote>Maybe a quote or something</Quote>
+            <Author>-Jonathan Jenson</Author>
+          </QuoteWrapper>
+        </Layer>
+      </FixedFooter>
     </Footer>
   )
 }
-
-export const pageQuery = graphql`
-  fragment footer_fragment on RootQueryType {
-    testImg: imageSharp(id: { regex: "/mtn-pano.jpg/" }) {
-      responsiveResolution(grayscale: true, width: 614) {
-        src
-        srcSet
-      }
-    }
-  }
-`

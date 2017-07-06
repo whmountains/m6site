@@ -3,10 +3,10 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import Footer from '../components/footer'
 import Buttons from '../components/Buttons'
 import Image from '../components/Image'
 import Stroke from '../components/Stroke'
+import Footer from '../components/Footer'
 import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 
 import '../css/MasterStyles.css'
@@ -147,7 +147,7 @@ const Container = styled.div`
 
 export default class Index extends React.Component {
   render () {
-    const { splashImg, lodgeImg, lakeImg, teamImg, brushSep1 } = this.props.data
+    const { splashImg, lodgeImg, lakeImg, teamImg, footerImg } = this.props.data
 
     return (
       <Container>
@@ -190,6 +190,7 @@ export default class Index extends React.Component {
         <Gallery>
           <h1>Gallery</h1>
         </Gallery>
+        <Stroke color='#2C5E86' flatEdge='below' />
         <TheTeam>
           <TeamImage>
             <Image height='100%' info={teamImg} />
@@ -201,6 +202,8 @@ export default class Index extends React.Component {
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
           </TeamInfo>
         </TheTeam>
+        <Stroke color='#2C5E86' flatEdge='above' zIndex='1' shadow />
+        <Footer bgImg={footerImg} />
       </Container>
     )
   }
@@ -219,8 +222,11 @@ export const pageQuery = graphql`
     }
     teamImg: imageSharp(id: { regex: "/team/" }) {
       ...imageInfo
-    },
+    }
     brushSep1: imageSharp(id: { regex: "/stroke4/" }) {
+      ...imageInfo
+    }
+    footerImg: imageSharp(id: { regex: "/mtn-pano/" }) {
       ...imageInfo
     }
   }

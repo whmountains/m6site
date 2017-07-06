@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import Buttons from '../components/Buttons'
 import Image from '../components/Image'
 import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
