@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Footer from '../components/footer'
 import Buttons from '../components/Buttons'
 import Image from '../components/Image'
+import Stroke from '../components/Stroke'
 import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 
 import '../css/MasterStyles.css'
@@ -139,12 +140,14 @@ const SplashSep = styled.img`
   position: absolute;
   margin-top: -35px;
 `
-const Container = styled.div``
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
 export default class Index extends React.Component {
   render () {
     const { splashImg, lodgeImg, lakeImg, teamImg, brushSep1 } = this.props.data
-    console.log('brushsep', brushSep1)
 
     return (
       <Container>
@@ -166,7 +169,7 @@ export default class Index extends React.Component {
             </SplashText>
           </Layer>
         </Splash>
-        <SplashSep src={brushSep1.responsiveSizes.src} srcSet={brushSep1.responsiveSizes.srcSet} />
+        <Stroke endColor='#A6D2EC' flatEdge='below' />
         <ThePlace>
           <PlaceTop>
             <LeftImage imgWidth='50%' info={lodgeImg} />
@@ -183,7 +186,7 @@ export default class Index extends React.Component {
             <RightImage imgWidth='50%' info={lakeImg} />
           </PlaceBottom>
         </ThePlace>
-        <SplashSep src={brushSep1.responsiveSizes.src} srcSet={brushSep1.responsiveSizes.srcSet} />
+        <Stroke endColor='#A6D2EC' flatEdge='above' />
         <Gallery>
           <h1>Gallery</h1>
         </Gallery>

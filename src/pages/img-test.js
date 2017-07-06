@@ -1,25 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Image from '../components/Image'
+import Stroke from '../components/Stroke'
 
-const Img = styled.img`
-  width: 100%;
-`
-
-export default (props) => {
-  console.log('img-test props', props)
-
+export default () => {
   return (
-    <Image info={props.data.testImg} />
+    <Stroke startColor='red' endColor='green' flip />
   )
-  // return null
 }
-
-export const pageQuery = graphql`
-  query ImgTestQuery {
-    testImg: imageSharp(id: { regex: "/splash-full/" }) {
-      ...imageInfo
-    }
-  }
-`
