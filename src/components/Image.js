@@ -37,12 +37,12 @@ export default class Image extends React.Component {
       imgLoaded: false
     }
   }
-  loadFullImage() {
+  loadFullImage () {
     this.setState({
       imgLoaded: true
     })
   }
-  render() {
+  render () {
     const image = this.props.info.responsiveSizes
     console.log('image', this.props)
 

@@ -68,7 +68,7 @@ const NonBlur = styled.div `
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   z-index: 9;
 `
 const Dates = {
@@ -104,6 +104,7 @@ const Guests = styled.select `
   border-radius: 20px;
   padding: 10px;
   padding-left: 40px;
+  background: transparent;
   background-image: url(${userIcon});
   background-size: 20px;
   background-repeat: no-repeat;
@@ -141,7 +142,7 @@ const Info = styled.div `
   display: flex;
 `
 const Desc = styled.div `
-  width: 60%;
+  width: 70%;
   font-family: Arvo;
   font-size: 16px;
 `
@@ -151,7 +152,7 @@ const Name = styled.h1 `
   font-size: 30px;
 `
 const BuyNow = styled.div `
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -197,7 +198,7 @@ export default class Index extends React.Component {
               <option>3 Guest</option>
               <option>4 Guest</option>
             </Guests>
-            <Buttons color='blue'>Check Dates</Buttons>
+            <Buttons color='blue' size='medium'>Check Dates</Buttons>
           </Checking>
           <Rooms>
             <Room>
@@ -208,7 +209,7 @@ export default class Index extends React.Component {
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
                 </Desc>
                 <BuyNow>
-                  <Buttons color='red'>Select</Buttons>
+                  <Buttons size='small'>Select</Buttons>
                   <Price>$300 per night</Price>
                 </BuyNow>
               </Info>
@@ -226,7 +227,7 @@ export default class Index extends React.Component {
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
                 </Desc>
                 <BuyNow>
-                  <Buttons color='red'>Select</Buttons>
+                  <Buttons size='small'>Select</Buttons>
                   <Price>$300 per night</Price>
                 </BuyNow>
               </Info>
