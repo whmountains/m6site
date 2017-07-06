@@ -129,7 +129,6 @@ const SplashSep = styled.img `
 
   position: absolute;
   margin-top: -35px;
-  left: -20px;
 `
 const Container = styled.div``
 
