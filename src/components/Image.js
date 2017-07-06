@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import autoBind from 'auto-bind'
 
 const Container = styled.div`
-  display: flex;
   position: relative;
-  background: url(${p => p.bg}) center/cover;
   overflow: hidden;
   background-color: #f6f6f6;
   ${p => `width: ` + p.width + ';'}
@@ -21,6 +19,7 @@ const Img = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${p => p.blur && 'filter(blur(7px));'}
 `
 
 const AspectRatioPreserver = styled.div`
@@ -44,7 +43,7 @@ export default class Image extends React.Component {
   }
   render () {
     const image = this.props.info.responsiveSizes
-    console.log('image', this.props)
+    const imageOpacity = ((!this.state.imgLoaded) && this.props.blurIn) ? 0 : 1
 
     return (
       <Container
@@ -52,12 +51,12 @@ export default class Image extends React.Component {
         width={this.props.width || this.props.imgWidth}
         className={this.props.className} >
         <AspectRatioPreserver ratio={image.aspectRatio} />
-        <Img src={image.base64} />
+        <Img blur src={image.base64} />
         <Img
           srcSet={image.srcSet}
           src={image.src}
           onLoad={this.loadFullImage}
-          style={{opacity: this.state.imgLoaded ? 1 : 0}} />
+          style={{opacity: imageOpacity}} />
       </Container>
     )
   }

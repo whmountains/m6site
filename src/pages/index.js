@@ -10,8 +10,6 @@ import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
 
 import '../css/MasterStyles.css'
 
-import Brush1 from '../images/brush-strokes/Stroke 5.png'
-
 import splashImg from '../images/splash-full.jpg'
 import theLodge from '../images/the-lodge.jpg'
 import theLake from '../images/the-lake.jpg'
@@ -24,6 +22,16 @@ const ButtonsWrapper = styled.div `
   width: 75%;
   max-width: 550px;
 `
+
+const Layer = styled.div`
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+`
+
 const PlaceTop = styled.div `
   display: flex;
 `
@@ -114,17 +122,6 @@ const TheTeam = styled.div`
   padding: 20px 5px;
 `
 
-const Layer = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  ${'' /* z-index: -1; */}
-  overflow: hidden;
-  display: flex;
-`
-
 const SplashText = styled.div`
   margin: auto;
   display: flex;
@@ -133,17 +130,22 @@ const SplashText = styled.div`
   align-items: center;
   flex-direction: column;
 `
-const SplashSep = styled.img `
+const SplashSep = styled.img`
   height: 70px;
+  width: 100%;
+
   position: absolute;
   margin-top: -35px;
 `
+const Container = styled.div``
+
 export default class Index extends React.Component {
   render () {
-    const { splashImg, lodgeImg, lakeImg, teamImg } = this.props.data
+    const { splashImg, lodgeImg, lakeImg, teamImg, brushSep1 } = this.props.data
+    console.log('brushsep', brushSep1)
 
     return (
-      <div id='main'>
+      <Container>
         <Helmet>
           <title>El Refugio | Home</title>
         </Helmet>
@@ -162,7 +164,7 @@ export default class Index extends React.Component {
             </SplashText>
           </Layer>
         </Splash>
-        <SplashSep src={Brush1} />
+        <SplashSep src={brushSep1.responsiveSizes.src} srcSet={brushSep1.responsiveSizes.srcSet} />
         <ThePlace>
           <PlaceTop>
             <LeftImage imgWidth='50%' info={lodgeImg} />
@@ -193,7 +195,7 @@ export default class Index extends React.Component {
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
           </TeamInfo>
         </TheTeam>
-      </div>
+      </Container>
     )
   }
 }
@@ -210,6 +212,9 @@ export const pageQuery = graphql`
       ...imageInfo
     }
     teamImg: imageSharp(id: { regex: "/team/" }) {
+      ...imageInfo
+    },
+    brushSep1: imageSharp(id: { regex: "/stroke4/" }) {
       ...imageInfo
     }
   }
