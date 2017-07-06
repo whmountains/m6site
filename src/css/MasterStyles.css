@@ -9,5 +9,10 @@ body {
   font-family: "Source sans pro";
 }
 #main {
-  background: #fff;
+  background: #FFFFFF;
+}
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }

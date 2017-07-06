@@ -64,7 +64,7 @@ const BlurBg = styled.div `
   filter: blur(5px);
   z-index: 8;
 `
-const NonBlur = styled.div `
+const BlurTint = styled.div `
   position: absolute;
   width: 100%;
   height: 100%;
@@ -184,7 +184,7 @@ export default class Index extends React.Component {
         </TitleWrapper>
         <Checking>
           <BlurBg />
-          <NonBlur />
+          <BlurTint />
           <div style={Dates}>
             <DateTitle>Check in</DateTitle>
             <DateTitle>Check out</DateTitle>
