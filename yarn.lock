@@ -3007,9 +3007,9 @@ gatsby-transformer-sharp@next:
   dependencies:
     bluebird "^3.5.0"
 
-gatsby@next:
-  version "1.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.0.0-beta.7.tgz#00969e652f048c2aeef36ba4c06e579cddfc4382"
+gatsby@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.0.2.tgz#1d8952ac7e8286a1326ac59b6632714ab11a378b"
   dependencies:
     async "^2.1.2"
     babel-core "^6.24.1"
@@ -3047,7 +3047,7 @@ gatsby@next:
     glob "^7.1.1"
     graphql "^0.10.3"
     graphql-relay "^0.5.1"
-    graphql-skip-limit "^1.0.0-beta.6"
+    graphql-skip-limit "^1.0.1"
     gray-matter "^2.1.0"
     hapi "^8.5.1"
     history "^4.6.2"
@@ -3352,9 +3352,9 @@ graphql-relay@^0.5.1:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/graphql-relay/-/graphql-relay-0.5.2.tgz#40ff714efd60c2cd89e0bcc79e2afa6d87fa8673"
 
-graphql-skip-limit@^1.0.0-beta.6:
-  version "1.0.0-beta.7-alpha.7dc2afa2"
-  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-1.0.0-beta.7-alpha.7dc2afa2.tgz#c052f7794caceb7761a6c0514d319a4aa9847b3f"
+graphql-skip-limit@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-1.0.1.tgz#71c8890564af5df5f428e645177280d5d783dcc6"
 
 graphql@^0.10.1, graphql@^0.10.3:
   version "0.10.3"
@@ -6266,7 +6266,7 @@ react-router-dom@^4.1.1:
     prop-types "^15.5.4"
     react-router "^4.1.1"
 
-react-router-scroll@ytase/react-router-scroll#build:
+"react-router-scroll@github:ytase/react-router-scroll#build":
   version "0.4.1"
   resolved "https://codeload.github.com/ytase/react-router-scroll/tar.gz/991ecddb08885e1fb80ec1e9dbf3a35844b7d4cd"
   dependencies:
