@@ -104,7 +104,7 @@ const Guests = styled.select `
   border-radius: 20px;
   padding: 10px;
   padding-left: 40px;
-  background: transparent;
+  background-color: transparent;
   background-image: url(${userIcon});
   background-size: 20px;
   background-repeat: no-repeat;
