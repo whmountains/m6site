@@ -43,7 +43,7 @@ export default class Image extends React.Component {
   }
   render() {
     const image = this.props.info.responsiveSizes
-    console.log('image', this.props)
+    const imageOpacity = ((!this.state.imgLoaded) && this.props.blurIn) ? 0 : 1
 
     return (
       <Container
@@ -56,7 +56,7 @@ export default class Image extends React.Component {
           srcSet={image.srcSet}
           src={image.src}
           onLoad={this.loadFullImage}
-          style={{opacity: this.state.imgLoaded ? 1 : 0}} />
+          style={{opacity: imageOpacity}} />
       </Container>
     )
   }
