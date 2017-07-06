@@ -7,10 +7,11 @@ import Footer from '../components/footer'
 import Buttons from '../components/Buttons'
 import Image from '../components/Image'
 import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
+import Layer from '../components/Layer'
 
 import '../css/MasterStyles.css'
 
-import Brush1 from '../images/brush-strokes/Stroke 5.png'
+import Brush1 from '../images/brush-strokes/Stroke 4.png'
 
 import splashImg from '../images/splash-full.jpg'
 import theLodge from '../images/the-lodge.jpg'
@@ -114,17 +115,6 @@ const TheTeam = styled.div`
   padding: 20px 5px;
 `
 
-const Layer = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  ${'' /* z-index: -1; */}
-  overflow: hidden;
-  display: flex;
-`
-
 const SplashText = styled.div`
   margin: auto;
   display: flex;
@@ -135,8 +125,11 @@ const SplashText = styled.div`
 `
 const SplashSep = styled.img `
   height: 70px;
+  width: 100%;
+
   position: absolute;
   margin-top: -35px;
+  left: -20px;
 `
 const Container = styled.div``
 
