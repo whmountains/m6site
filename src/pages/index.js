@@ -7,11 +7,8 @@ import Footer from '../components/footer'
 import Buttons from '../components/Buttons'
 import Image from '../components/Image'
 import { HEIGHT as NAV_HEIGHT } from '../components/Nav'
-import Layer from '../components/Layer'
 
 import '../css/MasterStyles.css'
-
-import Brush1 from '../images/brush-strokes/Stroke 4.png'
 
 import splashImg from '../images/splash-full.jpg'
 import theLodge from '../images/the-lodge.jpg'
@@ -25,6 +22,16 @@ const ButtonsWrapper = styled.div `
   width: 75%;
   max-width: 550px;
 `
+
+const Layer = styled.div`
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+`
+
 const PlaceTop = styled.div `
   display: flex;
 `
@@ -123,7 +130,7 @@ const SplashText = styled.div`
   align-items: center;
   flex-direction: column;
 `
-const SplashSep = styled.img `
+const SplashSep = styled.img`
   height: 70px;
   width: 100%;
 
@@ -134,7 +141,8 @@ const Container = styled.div``
 
 export default class Index extends React.Component {
   render () {
-    const { splashImg, lodgeImg, lakeImg, teamImg } = this.props.data
+    const { splashImg, lodgeImg, lakeImg, teamImg, brushSep1 } = this.props.data
+    console.log('brushsep', brushSep1)
 
     return (
       <Container>
@@ -156,7 +164,7 @@ export default class Index extends React.Component {
             </SplashText>
           </Layer>
         </Splash>
-        <SplashSep src={Brush1} />
+        <SplashSep src={brushSep1.responsiveSizes.src} srcSet={brushSep1.responsiveSizes.srcSet} />
         <ThePlace>
           <PlaceTop>
             <LeftImage imgWidth='50%' info={lodgeImg} />
@@ -204,6 +212,9 @@ export const pageQuery = graphql`
       ...imageInfo
     }
     teamImg: imageSharp(id: { regex: "/team/" }) {
+      ...imageInfo
+    },
+    brushSep1: imageSharp(id: { regex: "/stroke4/" }) {
       ...imageInfo
     }
   }
