@@ -204,7 +204,7 @@ export default class Index extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query MobileQuery {
     splashImg: imageSharp(id: { regex: "/splash-full/" }) {
       ...imageInfo
     }
