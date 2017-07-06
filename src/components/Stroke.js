@@ -12,9 +12,9 @@ const Svg = styled.svg`
   position: absolute;
   ${p => p.flatEdge === 'below' ? css`
     transform: rotate(180deg);
-    bottom: 0;
+    bottom: -1px;
   ` : css`
-    top: 0;
+    top: -1px;
   `}
 `
 
