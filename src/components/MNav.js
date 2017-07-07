@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 import { lighten } from 'polished'
+import '../css/NavAnimation.css'
 
-export const HEIGHT = '60px'
+export const HEIGHT = 'auto'
 
 const BACKGROUND = `#2C5E86`
 const ACCENT = `rgba(25,118,210,1)`
@@ -15,32 +16,44 @@ const Container = styled.div`
   left: 0;
   z-index: 99;
 
+  height: ${HEIGHT};
   background: ${BACKGROUND};
   border-bottom: 5px solid ${ACCENT};
   box-sizing: border-box;
-  height: ${HEIGHT};
 
   display: flex;
-  padding: 0 15px;
+  flex-direction: column;
 `
-
-const Logo = styled.img`
-
+const Relative = styled.div`
+  position: relative;
+  transition: 0.5s;
+  height: 52px;
 `
-
+const Top = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background: ${BACKGROUND};
+  color: #fff;
+`
 const Name = styled.h1`
   color: #fff;
-  align-self: center;
   margin: 0;
-  margin-right: auto;
   font-size: 35px;
   font-weight: 500;
 `
 
 const Links = styled.ul`
+  position: absolute;
   display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
+  padding: 20px 0;
+  transition: 0.5s;
+  width: 100%;
+  top: -76px;
+  z-index: -1;
 `
 
 const NavLink = styled(Link)`
@@ -52,33 +65,37 @@ const NavLink = styled(Link)`
  font-size: 22px;
  text-decoration: none;
  cursor: pointer;
+ background: ${BACKGROUND};
 
  &.active {
    background: #1976d2;
  }
-
- *:hover > & {
-   background: transparent;
-
-   &:hover {
-     background: #1976d2;
-   }
- }
 `
-
+function ShowMenu () {
+  var rel = document.querySelector('.Relative').classList.contains('RelAni')
+  document.querySelector('.Relative').classList.add('RelAni')
+  document.querySelector('.Links').classList.add('LinkAni')
+  if (rel) {
+    document.querySelector('.Relative').classList.remove('RelAni')
+    document.querySelector('.Links').classList.remove('LinkAni')
+  }
+}
 export default () => {
-
   return (
     <Container>
-      <Logo /> {/* TODO: fill in this image */}
-      <Name>El Refugio</Name>
-      <Links>
-        <NavLink activeClassName='active' to='/'>Home</NavLink>
-        <NavLink activeClassName='active' to='/lodge/'>Accomodations</NavLink>
-        <NavLink activeClassName='active' to='/lake/'>Activities</NavLink>
-        <NavLink activeClassName='active' to='/gallery/'>Gallery</NavLink>
-        <NavLink activeClassName='active' to='/booking/'>Book Now</NavLink>
-      </Links>
+      <Relative className='Relative'>
+        <Top>
+          <Name>El Refugio</Name>
+          <i onClick={ShowMenu}>Menu</i>
+        </Top>
+        <Links className='Links'>
+          <NavLink activeClassName='active' to='/'>Home</NavLink>
+          <NavLink activeClassName='active' to='/lodge/'>Accomodations</NavLink>
+          <NavLink activeClassName='active' to='/lake/'>Activities</NavLink>
+          <NavLink activeClassName='active' to='/gallery/'>Gallery</NavLink>
+          <NavLink activeClassName='active' to='/booking/'>Book Now</NavLink>
+        </Links>
+      </Relative>
     </Container>
   )
 }
