@@ -123,6 +123,7 @@ const TheTeam = styled.div`
   width: 100%;
   background: #2C5E86;
   padding: 20px 5px;
+  z-index: 2;
 `
 
 const SplashText = styled.div`
@@ -143,8 +144,8 @@ const SplashSep = styled.img`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
 `
-
 export default class Index extends React.Component {
   render () {
     const { splashImg, lodgeImg, lakeImg, teamImg, footerImg } = this.props.data
@@ -204,6 +205,7 @@ export default class Index extends React.Component {
         </TheTeam>
         <Stroke color='#2C5E86' flatEdge='above' zIndex='1' shadow />
         <Footer bgImg={footerImg} />
+        <Stroke color='#2C5E86' flatEdge='below' zIndex='1' shadow footer />
       </Container>
     )
   }

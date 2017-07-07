@@ -1,5 +1,5 @@
 import React from 'react'
-import {PhotoSwipeGallery} from 'react-photoswipe';
+import {PhotoSwipeGallery} from 'react-photoswipe'
 
 let items = [
   {
