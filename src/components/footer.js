@@ -6,13 +6,8 @@ import Layer from './Layer'
 
 export const HEIGHT = '400px'
 
-const Footer = styled.div`
-  padding-bottom: ${HEIGHT}
-`
-
-const FixedFooter = styled.div `
-  position: fixed;
-  bottom: 0;
+const Footer = styled.div `
+  position: relative;
   z-index: -5;
   width: 100%;
   height: ${HEIGHT};
@@ -40,17 +35,15 @@ const Bg = styled.img`
 export default ({bgImg}) => {
   return (
     <Footer>
-      <FixedFooter>
-        <Layer>
-          <Image info={bgImg} width='100%' />
-        </Layer>
-        <Layer>
-          <QuoteWrapper>
-            <Quote>Maybe a quote or something</Quote>
-            <Author>-Jonathan Jenson</Author>
-          </QuoteWrapper>
-        </Layer>
-      </FixedFooter>
+      <Layer>
+        <Image info={bgImg} width='100%' />
+      </Layer>
+      <Layer>
+        <QuoteWrapper>
+          <Quote>Maybe a quote or something</Quote>
+          <Author>-Jonathan Jenson</Author>
+        </QuoteWrapper>
+      </Layer>
     </Footer>
   )
 }
