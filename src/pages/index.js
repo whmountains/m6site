@@ -145,6 +145,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 2;
 `
 export default class Index extends React.Component {
   render () {
@@ -205,7 +206,7 @@ export default class Index extends React.Component {
         </TheTeam>
         <Stroke color='#2C5E86' flatEdge='above' zIndex='1' />
         <Footer bgImg={footerImg} />
-        <Stroke color='#2C5E86' flatEdge='above' zIndex='1' shadow footer />
+        <Stroke color='#2C5E86' flatEdge='below' zIndex='-1' footer />
       </Container>
     )
   }
