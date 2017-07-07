@@ -21,7 +21,7 @@ const Container = styled.div`
   height: ${HEIGHT};
 
   display: flex;
-  padding: 0 15px;
+  padding-left: 15px;
 `
 
 const Logo = styled.img`
@@ -35,12 +35,20 @@ const Name = styled.h1`
   margin-right: auto;
   font-size: 35px;
   font-weight: 500;
+  flex: none;
+  padding-right: 15px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 
 const Links = styled.ul`
   display: flex;
   list-style: none;
   margin: 0;
+  padding-right: 15px;
+  overflow-x: auto;
 `
 
 const NavLink = styled(Link)`
@@ -52,6 +60,7 @@ const NavLink = styled(Link)`
  font-size: 22px;
  text-decoration: none;
  cursor: pointer;
+ flex: none;
 
  &.active {
    background: #1976d2;
