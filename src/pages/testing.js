@@ -1,15 +1,32 @@
 import React from 'react'
-import {PhotoSwipe} from 'react-photoswipe'
+import autoBind from 'auto-bind'
+import styled from 'styled-components'
+import { PhotoSwipe } from 'react-photoswipe'
+import 'react-photoswipe/lib/photoswipe.css';
+
 import Nav from '../components/MNav'
 
-const Rel = {
-  position: 'relative',
-  background: 'grey'
-}
-export default class Index extends React.Component {
-  render () {
-    let isOpen = true
+const Container = styled.div`
+  padding: 100px;
+`
 
+export default class Index extends React.Component {
+  constructor() {
+    super()
+    autoBind(this)
+
+    this.state = {
+      isOpen: false
+    }
+  }
+  handleClose() {
+    this.setState({isOpen: false})
+  }
+  openGallery() {
+    this.setState({isOpen: true})
+  }
+  render () {
+    console.log(this.state)
     let items = [
       {
         src: 'http://lorempixel.com/1200/900/sports/1',
@@ -28,15 +45,11 @@ export default class Index extends React.Component {
     let options = {
       // http://photoswipe.com/documentation/options.html
     }
-
-    const handleClose = () => {
-      isOpen: false
-    }
     return (
-      <div style={Rel}>
-        {/* <PhotoSwipe isOpen={isOpen} items={items} options={options} onClose={handleClose} /> */}
-        <Nav />
-      </div>
+      <Container>
+        <button onClick={this.openGallery}>Show gallery!</button>
+        <PhotoSwipe isOpen={this.state.isOpen} items={items} options={options} onClose={this.handleClose} />
+      </Container>
     )
   }
 }
