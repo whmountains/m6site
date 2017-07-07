@@ -44,7 +44,7 @@ export default class Stroke extends React.Component {
     }
 
     return (
-      <Container zIndex={zIndex} footer={footer}>
+      <Container zIndex={zIndex} footer={footer} >
         <Svg shadow={shadow} flatEdge={flatEdge} className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6878 161">
           <linearGradient id={'StrokeGradient' + this.id}>
             <stop offset="0%" stopColor={startColor}/>

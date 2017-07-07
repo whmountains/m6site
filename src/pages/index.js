@@ -205,7 +205,7 @@ export default class Index extends React.Component {
         </TheTeam>
         <Stroke color='#2C5E86' flatEdge='above' zIndex='1' shadow />
         <Footer bgImg={footerImg} />
-        <Stroke color='#2C5E86' flatEdge='below' zIndex='1' shadow footer />
+        <Stroke color='#2C5E86' flatEdge='above' zIndex='1' shadow footer />
       </Container>
     )
   }
