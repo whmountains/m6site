@@ -33,6 +33,8 @@ const Layer = styled.div`
   left: 0;
 `
 
+const PLACE_COLOR = '#9EDEFF'
+
 const PlaceTop = styled.div `
   display: flex;
   flex-wrap: wrap;
@@ -106,15 +108,15 @@ const ThePlace = styled.div`
   background: #fff;
   padding: 40px 0;
   overflow: hidden;
-  background: linear-gradient(270deg, #A6D2EC, white);
+  background: linear-gradient(${PLACE_COLOR}, white);
 `
 const Gallery = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background: #F3F2F2;
+  height: 500px;
+  background: white;
 `
 const TheTeam = styled.div`
   display: flex;
@@ -171,7 +173,7 @@ export default class Index extends React.Component {
             </SplashText>
           </Layer>
         </Splash>
-        <Stroke endColor='#A6D2EC' flatEdge='below' />
+        <Stroke color={PLACE_COLOR} flatEdge='below' />
         <ThePlace>
           <PlaceTop>
             <LeftImage imgWidth='50%' info={lodgeImg} />
@@ -188,11 +190,9 @@ export default class Index extends React.Component {
             <RightImage imgWidth='50%' info={lakeImg} />
           </PlaceBottom>
         </ThePlace>
-        <Stroke endColor='#A6D2EC' flatEdge='above' />
         <Gallery>
           <h1>Gallery</h1>
         </Gallery>
-        <Stroke color='#2C5E86' flatEdge='below' />
         <TheTeam>
           <TeamImage>
             <Image height='100%' info={teamImg} />
