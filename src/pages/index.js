@@ -33,7 +33,7 @@ const Layer = styled.div`
   left: 0;
 `
 
-const PLACE_COLOR = '#9EDEFF'
+const PLACE_COLOR = '#CCEEFF'
 
 const PlaceTop = styled.div `
   display: flex;
