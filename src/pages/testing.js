@@ -47,8 +47,8 @@ export default class Index extends React.Component {
     }
     return (
       <Container>
-        <button onClick={this.openGallery}>Show gallery!</button>
-        <PhotoSwipe isOpen={this.state.isOpen} items={items} options={options} onClose={this.handleClose} />
+        {/* <button onClick={this.openGallery}>Show gallery!</button> */}
+        {/* <PhotoSwipe isOpen={this.state.isOpen} items={items} options={options} onClose={this.handleClose} /> */}
       </Container>
     )
   }

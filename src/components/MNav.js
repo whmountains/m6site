@@ -60,7 +60,6 @@ const NavLink = styled(Link)`
  display: flex;
  align-items: center;
  justify-content: center;
- padding: 0 15px;
  color: white;
  font-size: 22px;
  text-decoration: none;

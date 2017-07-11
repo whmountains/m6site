@@ -1542,7 +1542,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2.3:
+classnames@^2.2.3, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -4903,7 +4903,7 @@ modularscale@^1.0.2:
   dependencies:
     lodash.isnumber "^3.0.0"
 
-moment@2.x.x, moment@^2.16.0:
+moment@2.x.x, moment@^2.16.0, moment@^2.17.1, moment@^2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
@@ -5527,6 +5527,10 @@ pngquant-bin@^3.0.0:
 polished@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/polished/-/polished-1.2.1.tgz#83c18a85bf9d7023477cfc7049763b657d50f0f7"
+
+popper.js@^1.10.2:
+  version "1.10.8"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.10.8.tgz#0fd6343e68aa8c1cc8cfe35e02c673500a1bc609"
 
 postcss-apply@^0.3.0:
   version "0.3.0"
@@ -6226,6 +6230,16 @@ rc@^1.1.2, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-datepicker@^0.49.0:
+  version "0.49.0"
+  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-0.49.0.tgz#0144f1fdcc8fb68a0b6553b6f0c791688561c30f"
+  dependencies:
+    classnames "^2.2.5"
+    moment "^2.17.1"
+    prop-types "^15.5.8"
+    react-onclickoutside "^6.1.1"
+    react-popper "^0.7.0"
+
 react-deep-force-update@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.0.1.tgz#4f7f6c12c3e7de42f345992a3c518236fa1ecad3"
@@ -6259,6 +6273,10 @@ react-hot-loader@^3.0.0-beta.6:
     redbox-react "^1.3.6"
     source-map "^0.4.4"
 
+react-onclickoutside@^6.1.1:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.4.0.tgz#f7552307305079bfb111783f408928abe7248a1e"
+
 react-photoswipe@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/react-photoswipe/-/react-photoswipe-1.3.0.tgz#016dd978450a8406776db97511eaf96f2ffb9cfb"
@@ -6266,6 +6284,14 @@ react-photoswipe@^1.3.0:
     classnames "^2.2.3"
     lodash.pick "^4.2.1"
     photoswipe "^4.1.0"
+    prop-types "^15.5.10"
+
+react-popper@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.7.0.tgz#d19bc25eafe5d416ff0f438f2cd3965fbe5731b8"
+  dependencies:
+    is-equal-shallow "^0.1.3"
+    popper.js "^1.10.2"
     prop-types "^15.5.10"
 
 react-proxy@^3.0.0-alpha.0:
