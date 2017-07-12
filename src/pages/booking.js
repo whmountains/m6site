@@ -148,7 +148,6 @@ const Desc = styled.div `
 `
 const Name = styled.h1 `
   margin: 5px 0;
-  font-family: Source sans pro;
   font-size: 30px;
 `
 const BuyNow = styled.div `

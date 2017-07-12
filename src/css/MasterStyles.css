@@ -6,9 +6,6 @@
 
 }
 
-body {
-  font-family: "Source sans pro";
-}
 #main {
   background: #FFFFFF;
 }
@@ -17,3 +14,8 @@ img {
   -moz-user-select: none;
   -webkit-user-select: none;
 }
+
+/*
+ * This is the *wrong* place to set a default font for the document.
+ * Set it in ../utils/typography.js
+ */

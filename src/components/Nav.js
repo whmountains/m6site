@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 import { lighten } from 'polished'
 
+import Button from '../components/Buttons'
+
 export const HEIGHT = '60px'
 
 const BACKGROUND = `#2C5E86`
@@ -86,7 +88,7 @@ export default () => {
         <NavLink activeClassName='active' to='/lodge/'>Accomodations</NavLink>
         <NavLink activeClassName='active' to='/lake/'>Activities</NavLink>
         <NavLink activeClassName='active' to='/gallery/'>Gallery</NavLink>
-        <NavLink activeClassName='active' to='/booking/'>Book Now</NavLink>
+        <NavLink activeClassName='active' to='/booking/'><Button accent size='small'>Book Now</Button></NavLink>
       </Links>
     </Container>
   )
