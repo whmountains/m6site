@@ -26,7 +26,7 @@ export default styled.button`
   padding: 0.8em 1.1em;
   font-size: 1em;
 
-  ${p => p.size === 'small' && `width: 150px;`}
-  ${p => p.size === 'large' && `width: 150px;`}
-  ${p => p.size === 'span' && `width: 150px;`}
+  ${p => p.size === 'small' && `min-width: 150px; padding: 10px 0;`}
+  ${p => p.size === 'large' && `min-width: 300px;`}
+  ${p => p.size === 'span' && `min-width: 100%;`}
 `
