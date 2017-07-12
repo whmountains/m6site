@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Buttons from '../components/Buttons'
+
 import Image from './Image'
-import Layer from './Layer'
 
 export const HEIGHT = '400px'
 
@@ -12,21 +13,18 @@ const Footer = styled.div `
   width: 100%;
   height: ${HEIGHT};
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  background: #252525;
 `
-const QuoteWrapper = styled.div `
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
+
+const Quote = styled.p `
+  color: #F4F1F1;
+  margin: 0;
+  width: 66%;
+  text-align: center;
 `
-const Quote = styled.h1 `
-`
-const Author = styled.p `
-align-self: flex-end;
-`
+
 const Bg = styled.img`
   min-height: 100%;
   min-width: 100%;
@@ -35,15 +33,9 @@ const Bg = styled.img`
 export default ({bgImg}) => {
   return (
     <Footer>
-      <Layer>
-        <Image info={bgImg} width='100%' />
-      </Layer>
-      <Layer>
-        <QuoteWrapper>
-          <Quote>Maybe a quote or something</Quote>
-          <Author>-Jonathan Jenson</Author>
-        </QuoteWrapper>
-      </Layer>
+      <Quote>“Life is either a daring adventure or nothing.” - Hellen Keller</Quote>
+      <Buttons size='small'>More about us</Buttons>
+      <Buttons size='small'>Contact</Buttons>
     </Footer>
   )
 }

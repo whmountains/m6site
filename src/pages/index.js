@@ -16,139 +16,163 @@ import theLodge from '../images/the-lodge.jpg'
 import theLake from '../images/the-lake.jpg'
 import theTeam from '../images/team.jpg'
 
-const ButtonsWrapper = styled.div `
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  width: 75%;
-  max-width: 550px;
-`
-
-const Layer = styled.div`
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-`
-
-const PLACE_COLOR = '#CCEEFF'
-
-const PlaceTop = styled.div `
-  display: flex;
-  flex-wrap: wrap;
-`
-const PlaceBottom = styled.div `
-  display: flex;
-  flex-wrap: wrap;
-`
-const PlaceRight = styled.div `
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  padding: 0 50px;
-`
-const PlaceLeft = styled.div `
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  padding: 0 50px;
-`
-
-const LeftImage = styled(Image)`
-  transform: rotate(-3deg);
-`
-const RightImage = styled(Image)`
-  transform: rotate(3deg);
-`
-const TeamImage = styled.div `
-  width: 50%;
-  height: 100%;
-  background-image: url(${theTeam});
-  background-size: cover;
-  background-position: center;
-`
-const TeamInfo = styled.div `
-  width: 50%;
-  height: 100%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  padding: 0 50px;
-`
-const Splash = styled.div `
-  width: 100%;
-  height: calc(80vh - ${NAV_HEIGHT});
-  position: relative;
-`
-const HomeTitle = styled.h1`
-  color: #FFFFFF;
-  text-align: center;
-  font-family: caveat_brushregular;
-  font-size: 75px;
-  letter-spacing: 7px;
-`
-const SubTitle = styled.h3`
-  color: #FFFFFF;
-  text-align: center;
-`
-const ThePlace = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  background: #fff;
-  padding: 40px 0;
-  overflow: hidden;
-  background: linear-gradient(${PLACE_COLOR}, white);
-`
-const Gallery = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  background: white;
-`
-const TheTeam = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: #2C5E86;
-  padding: 20px 5px;
-  z-index: 2;
-`
-
-const SplashText = styled.div`
-  margin: auto;
-  display: flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`
-const SplashSep = styled.img`
-  height: 70px;
-  width: 100%;
-
-  position: absolute;
-  margin-top: -35px;
-`
+import Toppo from '../images/Toppo.svg'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: 2;
 `
+// Splash screen section
+const Splash = styled.div `
+  position: relative;
+  height: calc(100vh - ${NAV_HEIGHT});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+const SplashImgWrapper = styled.div `
+  width: 100%;
+  height: calc(100vh - ${NAV_HEIGHT});
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+`
+const SplashText = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+`
+const SplashTitle = styled.h1 `
+  font-family: caveat_brushregular;
+  font-size: 75px;
+`
+const SplashSubTitle = styled.p `
+  font-size: 30px;
+`
+const SplashButtons = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & * {
+    margin: 0 10px;
+  }
+`
+
+// Take back your vacation
+const Vacation = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  background: #3383D3;
+  padding: 50px 0;
+  position: relative;
+`
+const VacationBackground = styled.div `
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('${Toppo}');
+`
+const VacationTitle = styled.h1 ``
+const VacationDesc = styled.p `
+  width: 600px;
+`
+
+// The Lodge
+const Rotation = '1deg'
+const Overlap = '-60px'
+
+const Lodge = styled.div `
+  overflow: hidden;
+  padding: 50px 0;
+`
+const LodgeV = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const LodgeI = styled.div `
+  width: 60%;
+`
+const LodgeDesc = styled.div `
+  width: 50%;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+`
+const LodgeTop = LodgeV.extend ` margin-bottom: ${Overlap}; `
+const LodgeBottom = LodgeV.extend ` margin-top: ${Overlap}; `
+const LodgeFirstPhoto = LodgeI.extend ` transform: rotate(calc(-1 * ${Rotation})); z-index: 1;`
+const LodgeSecondPhoto = LodgeI.extend ` transform: rotate(${Rotation}); `
+
+
+// Activities
+const Activities = styled.div `
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+// Team
+const Team = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #CB755B;
+  padding: 20px 150px 20px 0;
+  color: #44596B;
+`
+const TeamImage = styled.div `
+  width: 50%;
+`
+const TeamDesc = styled.div `
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+`
+
+// Gallery
+const Gallery = styled.div `
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const Instagram = styled.div `
+  padding: 20px;
+  background: linear-gradient(270deg, #BC0095 0%, #E00024 45.86%, #FD6A00 100%);
+`
+const InstagramTag = styled.p `
+  color: white;
+  margin: 0;
+  font-size: 30px;
+`
+
+// Call
+const Call = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 50px;
+`
+const CallTitle = styled.h1 `
+  color: #D87E63;
+  font-weight: normal;
+`
+const CallDesc = styled.p `
+  color: #424242;
+  max-width: 730px;
+  line-height: 35px;
+`
+// HTML
 export default class Index extends React.Component {
   render () {
     const { splashImg, lodgeImg, lakeImg, teamImg, footerImg } = this.props.data
@@ -158,55 +182,76 @@ export default class Index extends React.Component {
         <Helmet>
           <title>El Refugio | Home</title>
         </Helmet>
+        {/* Splash Screen */}
         <Splash>
-          <Layer>
+          <SplashImgWrapper>
             <Image width='100%' info={splashImg} />
-          </Layer>
-          <Layer>
-            <SplashText>
-              <HomeTitle>For families, by a family.</HomeTitle>
-              <SubTitle>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br />Aenean commodo ligula eget dolor. Aenean massa.</SubTitle>
-              <ButtonsWrapper>
-                <Buttons color='blue' to='booking'>Reserve a Room</Buttons>
-                <Buttons color='red' to='activities'>More Info</Buttons>
-              </ButtonsWrapper>
-            </SplashText>
-          </Layer>
+          </SplashImgWrapper>
+          <SplashText>
+            <SplashTitle>El Refugio Lodge</SplashTitle>
+            <SplashSubTitle>For familes, by a family.</SplashSubTitle>
+          </SplashText>
+          <SplashButtons>
+            <Buttons color='blue'>Reserve a room</Buttons>
+            <Buttons color='red'>More info</Buttons>
+          </SplashButtons>
         </Splash>
-        <Stroke color={PLACE_COLOR} flatEdge='below' />
-        <ThePlace>
-          <PlaceTop>
-            <LeftImage imgWidth='50%' info={lodgeImg} />
-            <PlaceRight>
+        {/* Take back your vacation */}
+        <Vacation>
+          <VacationBackground />
+          <VacationTitle>Take back your vacation</VacationTitle>
+          <VacationDesc>
+            Nestled in the Andes mountains of southern Chile, El Refugio Lodge is a place away from the hustle and haste of daily life. There is no rat-race here. It’s the starting point for adventure--or a little peace and quiet.
+          </VacationDesc>
+        </Vacation>
+        {/* Lodge */}
+        <Lodge>
+          <LodgeTop>
+            <LodgeFirstPhoto>
+              <Image width='100%' info={lodgeImg} />
+            </LodgeFirstPhoto>
+            <LodgeDesc>
               <h1>The Lodge</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </PlaceRight>
-          </PlaceTop>
-          <PlaceBottom>
-            <PlaceLeft>
-              <h1>The Lake</h1>
+              <Buttons color='red'>More about the lodge</Buttons>
+            </LodgeDesc>
+          </LodgeTop>
+          <LodgeBottom>
+            <LodgeDesc>
+              <h1>Make yourself at home</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </PlaceLeft>
-            <RightImage imgWidth='50%' info={lakeImg} />
-          </PlaceBottom>
-        </ThePlace>
-        <Gallery>
-          <h1>Gallery</h1>
-        </Gallery>
-        <TheTeam>
+              <Buttons color='blue'>Reserve a room</Buttons>
+            </LodgeDesc>
+            <LodgeSecondPhoto>
+              <Image width='100%' info={lakeImg} />
+            </LodgeSecondPhoto>
+          </LodgeBottom>
+        </Lodge>
+        <Activities>
+          <h1>Activities</h1>
+        </Activities>
+        <Team>
           <TeamImage>
-            <Image height='100%' info={teamImg} />
+            <Image width='100%' info={teamImg} />
           </TeamImage>
-          <TeamInfo>
+          <TeamDesc>
             <h1>The Team</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-          </TeamInfo>
-        </TheTeam>
-        <Stroke color='#2C5E86' flatEdge='above' zIndex='1' />
-        <Footer bgImg={footerImg} />
-        <Stroke color='#2C5E86' flatEdge='below' zIndex='-1' footer />
+          </TeamDesc>
+        </Team>
+        <Gallery>
+          <h1>Gallery</h1>
+        </Gallery>
+        <Instagram>
+          <InstagramTag>#ElRefugioLodge</InstagramTag>
+        </Instagram>
+        <Call>
+          <CallTitle>Hope To See You Soon!</CallTitle>
+          <CallDesc> Whether you want to spend a few days on the top of our mountains, ride a horse, raft on the famous Futaleufu river, or simply relax or kayak on the lake, El Refugio Lodge is the place to start.</CallDesc>
+          <Buttons color="blue">Reserve a room</Buttons>
+        </Call>
+        <Footer />
       </Container>
     )
   }

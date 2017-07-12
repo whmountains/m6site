@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import DatePicker from '../components/DatePicker'
+import Calendar from '../components/DatePicker'
 
 const Blue = {
   background: 'blue',
@@ -12,7 +12,7 @@ export default class Index extends React.Component {
   render () {
     return (
       <div style={Blue}>
-        <DatePicker />
+        <Calendar />
       </div>
     )
   }

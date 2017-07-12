@@ -4,10 +4,11 @@ import Link from 'gatsby-link'
 
 const Base = styled(Link) `
   display: block;
-  padding: 20px;
-  width: 200px;
+  padding: 15px 5px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
+  font-size: 15px;
   color: #FFFFFF;
   border-radius: 3px;
   cursor: pointer;
@@ -19,10 +20,10 @@ const Blue = Base.extend `
     background: #1976D2;
 `
 const sizes = {
-  small: {width: '150px', padding: '10px 0'},
-  medium: {width: '200px'},
-  large: {width: '300px'},
-  span: {width: '100%'}
+  small: {minWidth: '150px', padding: '10px 0'},
+  medium: {minWidth: '150px'},
+  large: {minWidth: '300px'},
+  span: {minWidth: '100%'}
 }
 export default function Button ({children, color, onClick, to, size}) {
   switch (color) {

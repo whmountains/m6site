@@ -8,7 +8,7 @@ const onChange = (dateString, { dateMoment, timestamp }) => {
   console.log(dateString)
 }
 
-class Example extends React.Component {
+class Calendar extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -25,7 +25,9 @@ class Example extends React.Component {
 
   render () {
     return (
-      <DatePicker selected={this.state.startDate} onChange={this.handleChange} />
+      // <DatePicker selected={this.state.startDate} onChange={this.handleChange} />
+      // <DatePicker />
+      <div>Test</div>
     )
   }
 }
