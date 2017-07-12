@@ -1,5 +1,5 @@
 import React from 'react'
-import DatePicker from 'react-datepicker'
+import { DatePicker } from 'react-datepicker'
 import moment from 'moment'
 
 import 'react-datepicker/dist/react-datepicker.css'
@@ -25,9 +25,8 @@ class Calendar extends React.Component {
 
   render () {
     return (
-      // <DatePicker selected={this.state.startDate} onChange={this.handleChange} />
+      <DatePicker selected={this.state.startDate} onChange={this.handleChange} />
       // <DatePicker />
-      <div>Test</div>
     )
   }
 }
