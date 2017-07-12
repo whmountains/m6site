@@ -109,7 +109,6 @@ const LodgeBottom = LodgeV.extend ` margin-top: ${Overlap}; `
 const LodgeFirstPhoto = LodgeI.extend ` transform: rotate(calc(-1 * ${Rotation})); z-index: 1;`
 const LodgeSecondPhoto = LodgeI.extend ` transform: rotate(${Rotation}); `
 
-
 // Activities
 const Activities = styled.div `
   height: 50vh;
@@ -249,7 +248,7 @@ export default class Index extends React.Component {
         <Call>
           <CallTitle>Hope To See You Soon!</CallTitle>
           <CallDesc> Whether you want to spend a few days on the top of our mountains, ride a horse, raft on the famous Futaleufu river, or simply relax or kayak on the lake, El Refugio Lodge is the place to start.</CallDesc>
-          <Buttons color="blue">Reserve a room</Buttons>
+          <Buttons color='blue'>Reserve a room</Buttons>
         </Call>
         <Footer />
       </Container>
