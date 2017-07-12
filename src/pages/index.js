@@ -191,8 +191,8 @@ export default class Index extends React.Component {
             <SplashSubTitle>For familes, by a family.</SplashSubTitle>
           </SplashText>
           <SplashButtons>
-            <Buttons color='blue'>Reserve a room</Buttons>
-            <Buttons color='red'>More info</Buttons>
+            <Buttons>Reserve a room</Buttons>
+            <Buttons accent>More info</Buttons>
           </SplashButtons>
         </Splash>
         {/* Take back your vacation */}
