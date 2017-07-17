@@ -2,3 +2,19 @@ backend:
   name: github
   repo: whmountains/m6site-data # Path to your Github repository
   branch: master # Branch to update
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  - name: "pages" # Used in routes, e.g. /admin/collections/blog
+    label: "Pages" # Used in the UI
+    folder: "data/pages" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "desc-header", name: "desc-header", widget: "string"}
+      - {label: "desc-body", name: "desc-body", widget: "string"}
+      - {label: "thelodge-title", name: "thelodge-title", widget: "string"}
+      - {label: "thelodge-body", name: "thelodge-body", widget: "string"}
+      - {label: "ammenities-title", name: "ammenities-title", widget: "string"}
+      - {label: "ammenities-body", name: "ammenities-body", widget: "string"}
