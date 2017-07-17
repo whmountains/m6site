@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: whmountains/m6site-data # Path to your Github repository
+  branch: master # Branch to update
